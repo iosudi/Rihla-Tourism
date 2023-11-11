@@ -1,0 +1,126 @@
+@media (max-width: 1470px) {
+  .activities-cards {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2em 5%;
+  }
+
+  .trips-recommendation .container .trips-carousel {
+    max-width: 1100px;
+    width: 100%;
+  }
+
+  .trips-recommendation .container .trips-slider {
+    padding: 0;
+  }
+
+  .trips-recommendation .container .left {
+    left: -55px;
+  }
+
+  .trips-recommendation .container .right {
+    right: -55px;
+  }
+}
+
+@media (max-width: 1045px) {
+  .activities-cards {
+    padding: 2em 0%;
+  }
+
+  .activity h3 {
+    font-size: 18px;
+  }
+
+  .activity .trip-details p {
+    font-size: 13px;
+  }
+
+  .activity .trip-image .trip-cost button {
+    font-size: 15px;
+  }
+
+  #posts .container .carousel {
+    grid-auto-columns: calc((100% / 2) - 13px);
+  }
+
+  .footer-section .links-section {
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  .footer-section .links-column:nth-child(2) {
+    border-bottom: 1px solid #a8a8a8;
+    margin-bottom: 10px;
+  }
+
+  footer .links-section li {
+    padding-bottom: 5px;
+  }
+
+  footer .title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 923px) {
+  .main .heading h2 {
+    font-size: 45px;
+  }
+
+  .main .heading p {
+    font-size: 20px;
+  }
+
+  .main .heading p span {
+    font-size: 25px;
+  }
+
+  .main .city-search {
+    width: 100%;
+  }
+
+  .main .city-search button {
+    height: 60px;
+    width: 15%;
+    font-size: 25px;
+  }
+
+  .main .city-search .search-box {
+    width: 80%;
+    height: 100%;
+    padding-right: 15px;
+  }
+
+  .main .city-search .search-box span i {
+    font-size: 20px;
+  }
+
+  .main .city-search .search-box input {
+    font-size: 20px;
+  }
+
+  .activities-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .activity h3 {
+    font-size: 20px;
+  }
+
+  .activity .trip-details p {
+    font-size: 15px;
+  }
+
+  .activity .trip-image .trip-cost button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 723px) {
+  #posts .container .carousel {
+    grid-auto-columns: calc((100% / 1) - 13px);
+  }
+}

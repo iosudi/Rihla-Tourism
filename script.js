@@ -20,99 +20,20 @@ $(window).scroll(function () {
 
   prevScrollPos = currentScrollPos;
 });
-/*
-const carousel = $(".trips-recommendation .trips-carousel");
-const arrows = $(".trips-recommendation .arrow");
-const firstCard = $(".trips-recommendation .activity").outerWidth();
-const carouselChildren = carousel.children().toArray();
 
-let cardPerView = Math.round(carousel.outerWidth(true) / firstCard);
+//collapsed nav-bar
 
-let isDragging = false,
-  startX,
-  startScrollLeft;
+const navBarIcon = $(".collapsed-nav");
+const phoneNavBar = $(".phone-nav");
+const closeNavBar = $(".close-ico");
 
-const dragStart = (e) => {
-  isDragging = true;
-  carousel.addClass("dragging");
-  startX = e.pageX;
-  startScrollLeft = carousel.scrollLeft();
-};
-
-const dragging = (e) => {
-  if (!isDragging) return;
-  carousel.scrollLeft(startScrollLeft - (e.pageX - startX));
-};
-
-const dragStop = () => {
-  isDragging = false;
-  carousel.removeClass("dragging");
-};
-
-arrows.each(function () {
-  // Bind a click event handler to each arrow element
-  $(this).on("click", function (e) {
-    const arrow = $(this);
-    const isLeftArrow = arrow.hasClass("left");
-    const scrollAmount = isLeftArrow ? -firstCard : firstCard;
-
-    // Adjust the scrollLeft property of the carousel element
-    carousel.scrollLeft(carousel.scrollLeft() + scrollAmount);
-  });
+navBarIcon.on("click",function (){
+phoneNavBar.addClass("show-nav");
 });
 
-// Prepend cards at the beginning and append cards at the end of the carousel
-carouselChildren
-  .slice(-cardPerView)
-  .reverse()
-  .forEach(function (activity) {
-    carousel.prepend($(activity).prop("outerHTML"));
-  });
-
-carouselChildren.slice(0, cardPerView).forEach(function (activity) {
-  carousel.append($(activity).prop("outerHTML"));
+closeNavBar.on("click", function () {
+  phoneNavBar.removeClass("show-nav");
 });
-
-const infiniteScroll = function () {
-  const carousel = $(".trips-recommendation .trips-carousel");
-  const carouselScrollLeft = carousel.scrollLeft();
-  const carouselScrollWidth = carousel[0].scrollWidth; // Use [0] to access the native DOM element
-  const carouselWidth = carousel.outerWidth();
-
-  if (carouselScrollLeft === 0) {
-    carousel.addClass("no-transition");
-    carousel.scrollLeft(carouselScrollWidth - 2 * carouselWidth);
-    carousel.removeClass("no-transition");
-  } else if (
-    carouselScrollLeft === Math.floor(carouselScrollWidth - carouselWidth)
-  ) {
-    carousel.addClass("no-transition");
-    carousel.scrollLeft(carouselWidth);
-    carousel.removeClass("no-transition");
-  }
-
-  clearTimeout(timeoutId);
-  if (!carousel.is(":hover")) {
-    autoSlide();
-  }
-};
-
-const autoSlide = () => {
-  if ($(window).innerWidth() < 800) return;
-  timeoutId = setTimeout(
-    () => carousel.scrollLeft(carousel.scrollLeft() + firstCard),
-    3500
-  );
-};
-
-autoSlide();
-carousel.on("mousedown", dragStart);
-carousel.on("mouseup", dragStop);
-carousel.on("mouseleave", dragStop);
-carousel.on("mousemove", dragging);
-carousel.on("scroll", infiniteScroll);
-carousel.on("mouseenter", () => clearTimeout(timeoutId));
-carousel.on("mouseleave", autoSlide);*/
 
 //footer section
 $(".dropdown").click(function () {
@@ -148,13 +69,11 @@ carouselChildren.slice(0, cardPerView).forEach(function (card) {
 });
 
 arrows.each(function () {
-  // Bind a click event handler to each arrow element
   $(this).on("click", function (e) {
     const arrow = $(this);
     const isLeftArrow = arrow.hasClass("left");
     const scrollAmount = isLeftArrow ? -firstCard : firstCard;
 
-    // Adjust the scrollLeft property of the carousel element
     carousel.scrollLeft(carousel.scrollLeft() + scrollAmount);
   });
 });
@@ -183,7 +102,7 @@ const dragging = function (e) {
 const infiniteScroll = function () {
   const carousel = $("#posts .container .carousel");
   const carouselScrollLeft = carousel.scrollLeft();
-  const carouselScrollWidth = carousel[0].scrollWidth; // Use [0] to access the native DOM element
+  const carouselScrollWidth = carousel[0].scrollWidth; 
   const carouselWidth = carousel.outerWidth();
 
   if (carouselScrollLeft === 0) {
@@ -221,3 +140,17 @@ carousel.on("mousedown", dragStart);
 carousel.on("scroll", infiniteScroll);
 carousel.on("mouseenter", () => clearTimeout(timeoutId));
 carousel.on("mouseleave", autoSlide);
+
+function changeInnerHtml() {
+  var element = $(".activity.large h3"); 
+
+  if ($(window).width() < 723) {
+    element.text("استمتع بشواطئ البحر في الغردقة");
+  } else {
+    element.text("استجمام على شواطئ البحر الأحمر في الغردقة");
+  }
+}
+
+changeInnerHtml();
+
+$(window).resize(changeInnerHtml);

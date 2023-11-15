@@ -31,6 +31,52 @@
 
   <body>
     <!-- Navigation Bar -->
+    <div class="phone-nav">
+      <div class="close-ico">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      <div class="container">
+        <div class="nav-items">
+          <ul>
+            <!-- Navigation Links -->
+            <li><a href="#" class="active">اكتشف</a></li>
+            <li><a href="#">الأنشطة</a></li>
+            <li><a href="#"> المدونه</a></li>
+            <li><a href="#"> أي حاجه</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-options">
+          <button class="login btn">
+            تسجيل الدخول <i class="bx bxs-user-circle"></i>
+          </button>
+        </div>
+
+        <div class="logo">
+          <div class="stores-icons">
+            <div class="heading">
+              <h3>حَمِّل تطبيق رحلة</h3>
+            </div>
+            <div class="store">
+              <i class="fa-brands fa-apple"></i>
+              <div class="store-info">
+                <p>Available on the</p>
+                <h4>App Store</h4>
+              </div>
+            </div>
+            <div class="store">
+              <i class="fa-brands fa-google-play"></i>
+              <div class="store-info">
+                <p>GET IT ON</p>
+                <h4>Google play</h4>
+              </div>
+            </div>
+          </div>
+          <img src="logo.png" alt="رحلتك لحجز السفر" />
+        </div>
+      </div>
+    </div>
+
     <header>
       <nav>
         <!-- Navigation Items and Options Section -->
@@ -40,7 +86,7 @@
             <ul>
               <!-- Navigation Links -->
               <li><a href="#"> أي حاجه</a></li>
-              <li><a href="#"> أي حاجه</a></li>
+              <li><a href="#"> المدونه</a></li>
               <li><a href="#">الأنشطة</a></li>
               <li><a href="#" class="active">اكتشف</a></li>
             </ul>
@@ -62,6 +108,9 @@
             <button class="login btn">
               <i class="bx bxs-user-circle"></i>تسجيل الدخول
             </button>
+            <div class="collapsed-nav">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
         </div>
       </nav>
@@ -92,10 +141,16 @@
         <div class="activities-cards">
           <div class="activity large">
             <div class="trip-image">
+              <div class="booking-button">
+                <button>احجز</button>
+              </div>
               <img
                 src="https://cdn.pixabay.com/photo/2018/07/23/11/34/hurghada-3556670_1280.jpg"
                 draggable="false"
               />
+              <div class="trip-cost">
+                <button>٢٢٠$ - <span>للشخص</span></button>
+              </div>
             </div>
             <div class="trip-description">
               <div class="trip-name">
@@ -278,15 +333,15 @@
           <h2>رحلة <span>توصي بـ</span></h2>
           <p>الرحلات الأكثر حجزًا على موقعنا</p>
         </div>
-        <div class="arrow left">
-          <div class="arrow-left"></div>
-        </div>
         <div class="slider">
+          <div class="arrow left">
+            <div class="arrow-left"></div>
+          </div>
           <ul class="carousel animate">
             <li class="activity">
               <div class="trip-image">
                 <img
-                  src="https://cdn.pixabay.com/photo/2017/09/13/18/38/morocco-2746495_1280.jpg"
+                  src="https://cdn.pixabay.com/photo/2019/09/24/09/58/marrakech-4500910_1280.jpg"
                   draggable="false"
                 />
               </div>
@@ -521,14 +576,12 @@
               </div>
             </li>
           </ul>
-        </div>
-        <div class="arrow right">
-          <div class="arrow-right"></div>
+          <div class="arrow right">
+            <div class="arrow-right"></div>
+          </div>
         </div>
       </div>
     </section>
-
-
 
     <footer>
       <div class="footer-section">

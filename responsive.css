@@ -23,6 +23,25 @@
 }
 
 @media (max-width: 1045px) {
+  .nav-bar {
+    gap: 4em;
+  }
+
+  header .nav-items ul a {
+    font-size: 18px;
+  }
+
+  header .nav-options .phone-number,
+  header .nav-options .login.btn,
+  header .nav-options .login.btn i,
+  header .nav-options .language-btn i {
+    font-size: 15px;
+  }
+
+  header .logo img {
+    width: 5em;
+  }
+
   .activities-cards {
     padding: 2em 0%;
   }
@@ -119,8 +138,151 @@
   }
 }
 
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+    padding: 1% 5%;
+  }
+
+  header .nav-bar {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0em;
+  }
+
+  header .nav-items {
+    display: none;
+  }
+
+  header .nav-options .login.btn {
+    display: none;
+  }
+
+  header .nav-options .phone-number i,
+  header .nav-options .language-btn i {
+    font-size: 20px;
+  }
+
+  header .collapsed-nav {
+    display: block;
+    font-size: 20px;
+  }
+  header .logo img {
+    width: 7em;
+  }
+}
+
 @media (max-width: 723px) {
   #posts .container .carousel {
-    grid-auto-columns: calc((100% / 1) - 13px);
+    grid-auto-columns: calc((100% / 1));
+  }
+
+  .activities-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .activity {
+    width: 400px;
+  }
+
+  .activity.large {
+    flex-direction: column;
+  }
+
+  .activity.large .trip-cost button {
+    display: none;
+  }
+
+  .activity.large .booking-button button {
+    display: none;
+  }
+
+  .activity.large .trip-image .trip-cost button {
+    display: block;
+  }
+
+  .activity.large .trip-image .booking-button button {
+    display: block;
+  }
+
+  .activity .trip-details {
+    display: none;
+  }
+
+  .more-button {
+    width: 80%;
+  }
+
+  #posts .container .carousel .activity {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main .heading h2 {
+    font-size: 25px;
+  }
+
+  .main .heading p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .main .heading p span {
+    font-size: 20px;
+  }
+
+  .main .city-search button {
+    font-size: 20px;
+  }
+
+  .main .city-search .search-box input {
+    font-size: 18px;
+  }
+
+  .activity {
+    width: 250px;
+  }
+
+  #posts .container {
+    padding: 0 1em;
+  }
+
+  #posts .container .carousel .activity {
+    width: 100%;
+    height: 500px;
+  }
+
+  #posts .container .carousel .activity img {
+    height: 100%;
+  }
+
+  #posts .container .activity .trip-description {
+    padding: 10px 10px;
+  }
+
+  #posts .activity h3 {
+    font-size: 18px;
+  }
+
+  #posts .activity .trip-cost button {
+    padding: 0px 35px;
+    font-size: 15px;
+  }
+
+  #posts .activity .booking-button button {
+    padding: 0px 25px;
+    font-size: 15px;
+  }
+
+  #posts .container .left {
+    left: -5%;
+  }
+
+  #posts .container .right {
+    right: -5%;
   }
 }

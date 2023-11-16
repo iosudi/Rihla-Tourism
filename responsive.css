@@ -136,6 +136,12 @@
   .activity .trip-image .trip-cost button {
     font-size: 20px;
   }
+
+  #posts .container {
+    padding: 0 1em;
+    position: relative;
+    height: 100%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -168,8 +174,13 @@
     display: block;
     font-size: 20px;
   }
+
   header .logo img {
     width: 7em;
+  }
+
+  .phone-nav .logo img {
+    width: 40%;
   }
 }
 
@@ -218,6 +229,38 @@
 
   #posts .container .carousel .activity {
     width: 100%;
+  }
+
+  footer .app-section .stores-icons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer-section .brand-section img {
+    width: 10em;
+    padding-bottom: 4em;
+  }
+
+  footer {
+    padding: 4em 1em 1em;
+  }
+
+  footer .app-section .store {
+    gap: 15px;
+    padding: 5px 15px;
+    width: 150px;
+  }
+
+  footer .app-section .store .store-info p {
+    font-size: 12px;
+  }
+
+  footer .app-section .store .store-info h4 {
+    font-size: 14px;
+  }
+
+  footer .app-section .stores-icons .store i {
+    font-size: 30px;
   }
 }
 
@@ -278,11 +321,45 @@
     font-size: 15px;
   }
 
+  #posts .arrow {
+    width: 40px;
+    height: 40px;
+  }
+
   #posts .container .left {
-    left: -5%;
+    left: -3%;
   }
 
   #posts .container .right {
-    right: -5%;
+    right: -3%;
+  }
+
+  .phone-nav .stores-icons {
+    gap: 0px;
+  }
+
+  .phone-nav .stores-icons .store {
+    width: 150px;
+  }
+
+  .phone-nav .stores-icons .store p {
+    font-size: 12px;
+  }
+
+  .phone-nav .stores-icons .store h4 {
+    font-size: 14px;
+  }
+
+  .phone-nav .stores-icons .store i {
+    font-size: 30px;
+  }
+
+  .phone-nav .nav-items ul {
+    font-size: 25px;
+  }
+
+  .phone-nav .login.btn {
+    font-size: 15px;
+    padding: 5px 50px;
   }
 }

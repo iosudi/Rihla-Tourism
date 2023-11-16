@@ -299,7 +299,7 @@ header.header-bg .logo img {
   border-bottom-right-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 20px #4e4e4e41;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .activities .activity:hover {
@@ -353,7 +353,7 @@ header.header-bg .logo img {
 
 .activities-cards .activity .trip-description,
 #posts .container .activity .trip-description {
-  padding: 20px 25px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -667,7 +667,7 @@ header.header-bg .logo img {
   transition: 0.5s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   overflow: hidden;
@@ -688,9 +688,15 @@ header.header-bg .logo img {
   user-select: none;
 }
 
+#posts .container .carousel .activity .trip-image {
+  width: 100%;
+  height: 300px;
+}
+
 #posts .container .carousel .activity img {
   object-fit: cover;
-  height: 300px;
+  height: 100%;
+  width: 100%;
 }
 
 footer {
@@ -840,11 +846,12 @@ footer .copyright-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(173, 173, 173, 0.705);
+  background-color: rgb(226, 226, 226);
   z-index: 99;
   top: -100%;
-  transition: 0.5s cubic-bezier(0.86, 0.56, 0.5, 0.87);
+  transition: 0.5s cubic-bezier(0.38, 0.32, 0.65, 1.04);
 }
+
 .phone-nav.show-nav {
   top: 0;
 }
@@ -884,7 +891,7 @@ footer .copyright-section {
 }
 
 .phone-nav .logo img {
-  width: 30%;
+  width: 15em;
 }
 
 .phone-nav .stores-icons {
@@ -901,6 +908,10 @@ footer .copyright-section {
 
 .phone-nav .stores-icons .store i {
   color: #000;
+}
+
+.phone-nav .stores-icons .store p {
+  text-align: left;
 }
 
 .phone-nav .nav-items ul {
@@ -932,4 +943,5 @@ footer .copyright-section {
   font-size: 20px;
   padding: 5px 80px;
   border-radius: 15px;
+  border-top-left-radius: 1px;
 }

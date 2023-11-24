@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family_1;
+  list-style: none;
+  text-align: right;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eaeaea;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e6be8;
+  border-radius: 15px;
+}
+
+body {
+  background: $background-color_6;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: $color_1;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 700;
+  color: $color_12;
+}
+
+i {
+  color: $color_1;
+  transition: 0.5s;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: $color_1;
+  transition: 0.5s;
+  i {
+    font-size: 23px;
+  }
+}
+
+.active {
+  font-weight: 800;
+}
+
+.expand {
+  height: fit-content;
+}
+
+.more-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  button {
+    @include flex-center;
+    background-color: $background-color_3;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    width: 250px;
+    height: 70px;
+    padding: 1px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $color_1;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  span {
+    width: 15vw;
+    height: 3px;
+  }
+  span.left {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #0b3e914f);
+  }
+  span.right {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #0b3e914f);
+  }
+}

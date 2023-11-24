@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- BoxIcon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Page Title -->
+    <title>استكشف الأنشطة السياحية في الوطن العربي مع رحلة</title>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class="phone-nav">
+      <div class="close-ico">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      <div class="container">
+        <div class="nav-items">
+          <ul>
+            <!-- Navigation Links -->
+            <li><a href="index.html" class="active">اكتشف</a></li>
+            <li><a href="blog.html"> المدونه</a></li>
+            <li><a href="activities.html">الأنشطة</a></li>
+            <li><a href="about.html"> عن رحلة</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-options">
+          <button class="login btn">
+            تسجيل الدخول <i class="bx bxs-user-circle"></i>
+          </button>
+        </div>
+
+        <div class="logo">
+          <div class="stores-icons">
+            <div class="heading">
+              <h3>حَمِّل تطبيق رحلة</h3>
+            </div>
+            <div class="store">
+              <i class="fa-brands fa-apple"></i>
+              <div class="store-info">
+                <p>Available on the</p>
+                <h4>App Store</h4>
+              </div>
+            </div>
+            <div class="store">
+              <i class="fa-brands fa-google-play"></i>
+              <div class="store-info">
+                <p>GET IT ON</p>
+                <h4>Google play</h4>
+              </div>
+            </div>
+          </div>
+          <img src="logo.png" alt="رحلتك لحجز السفر" />
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <nav>
+        <!-- Navigation Items and Options Section -->
+        <div class="nav-bar">
+          <!-- Navigation Items -->
+          <div class="nav-items">
+            <ul>
+              <!-- Navigation Links -->
+              <li><a href="about.html"> عن رحلة</a></li>
+              <li><a href="blog.html"> المدونه</a></li>
+              <li><a href="activities.html" class="active">الأنشطة</a></li>
+              <li><a href="index.html">اكتشف</a></li>
+            </ul>
+          </div>
+          <!-- Logo Section -->
+          <div class="logo">
+            <img src="logo.png" alt="رحلتك لحجز السفر" />
+          </div>
+          <!-- Navigation Options -->
+          <div class="nav-options">
+            <!-- Phone Number with Icon -->
+            <div class="phone-number">
+              <span>+02 36911967 <i class="bx bxs-phone-call"></i></span>
+            </div>
+            <!-- Currency and Login Buttons with Icons -->
+            <button class="language-btn btn">
+              <i class="bx bx-world"></i>
+            </button>
+            <button class="login btn">
+              <i class="bx bxs-user-circle"></i>تسجيل الدخول
+            </button>
+            <div class="collapsed-nav">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="blog-main">
+      <div class="container">
+        <div class="main-content">
+          <div class="heading">
+            <h2>
+              اكـتشف الـعالم
+              <div>
+                اكثر التجارب <br />
+                الــفـــــريده
+              </div>
+            </h2>
+          </div>
+          <div class="trip-search">
+            <div class="input-box">
+              <input type="text" placeholder="الموقع" />
+              <input type="date" placeholder="التاريخ" />
+              <button class="button">
+                <svg
+                  class="svgIcon"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                  ></path>
+                </svg>
+                ابـحث
+              </button>
+            </div>
+            <div class="Rihla-features">
+              <ul>
+                <li>تجارب مختارة بعناية<i class="bx bx-check-double"></i></li>
+                <li>الغاء مجاني<i class="bx bx-check-double"></i></li>
+                <li>
+                  مراجعات من TripAdvisor<i class="bx bx-check-double"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-posts">
+      <div class="container">
+        <div class="posts-content">
+          <div class="posts">
+            <div class="post">
+              <div class="heading"><h2>الرحلات شائـعه</h2></div>
+              <div class="post-card">
+                <div class="post-image">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg"
+                  />
+                </div>
+                <div class="post-caption">
+                  <h3 class="title">استعد لرحلتك</h3>
+                  <div class="description">
+                    إذا كنت تخطط لرحلة، فالتوجه إلى الوجهات الشائعة يعد خيارًا
+                    رائعًا لتجربة سفر مثيرة. قم بالتحضير لرحلتك باستكشاف المعالم
+                    السياحية، وتجربة الطعام المحلي، والمشاركة في الأنشطة
+                    الثقافية. استمتع بالمغامرة واجعل كل لحظة تعتبر تجربة فريدة
+                    من نوعها.
+                  </div>
+                  <div class="links">
+                    <button>اقرأ المزيد</button>
+                    <div class="social">
+                      <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="heading"><h2>استكشف الوجهات</h2></div>
+              <div class="post-card">
+                <div class="post-image">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2021/05/29/18/59/petra-6294051_1280.jpg"
+                  />
+                </div>
+                <div class="post-caption">
+                  <h3 class="title">استمتع بمعالم مميزة</h3>
+                  <div class="description">
+                    يقدم استكشاف وجهات جديدة فرصة لاستمتاع بمعالم مميزة. اكتشاف
+                    المعابده التاريخية، والحدائق الطبيعية الساحرة، يضيف لمسة من
+                    الجمال إلى رحلتك. تصفح شوارع المدن والقرى لاستكشاف الحياة
+                    اليومية والتفاعل مع السكان المحليين.
+                  </div>
+                  <div class="links">
+                    <button>اقرأ المزيد</button>
+                    <div class="social">
+                      <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="heading"><h2>استمتع بتجارب فريده</h2></div>
+              <div class="post-card">
+                <div class="post-image">
+                  <img
+                    src="https://res.cloudinary.com/simpleview/image/upload/v1449651681/clients/norway/Trolltunga-norway-must-see-nature-attractions-2-1_3c2d1d6d-df0f-40f4-89ea-ea0abe488b13.jpg"
+                  />
+                </div>
+                <div class="post-caption">
+                  <h3 class="title">استكشاف الجمال المميز</h3>
+                  <div class="description">
+                    في رحلتنا لاستكشاف العالم، يكمن السحر في اكتشاف تجارب فريدة
+                    تعكس جوهر الوجهات التي نختارها للزيارة. "اكتشاف تجارب فريدة"
+                    هو السفر بمعنى أعمق، حيث يتاح للمسافرين الفرصة لاكتساب تجارب
+                    تثري حياتهم بطرق لا تُنسى.
+                  </div>
+                  <div class="links">
+                    <button>اقرأ المزيد</button>
+                    <div class="social">
+                      <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post">
+              <div class="heading"><h2>أروع المناظر الطبيعية</h2></div>
+              <div class="post-card">
+                <div class="post-image">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2018/08/16/08/39/hallstatt-3609863_1280.jpg"
+                  />
+                </div>
+                <div class="post-caption">
+                  <h3 class="title">تجربة السكون والجمال</h3>
+                  <div class="description">
+                    عندما يتعلق الأمر بالطبيعة، يوفر العالم لنا لوحة فنية من
+                    المناظر الطبيعية الرائعة. "أروع المناظر الطبيعية" تعني أكثر
+                    من مجرد صور جميلة، إنها تجربة تأخذنا في رحلة إلى أماكن ساحرة
+                    تمتزج فيها الجبال والبحار والوديان لتشكل لوحة خلابة من
+                    الجمال.
+                  </div>
+                  <div class="links">
+                    <button>اقرأ المزيد</button>
+                    <div class="social">
+                      <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rihla-info">
+            <div class="about-rihla box">
+              <h3>عن <span>رحله</span></h3>
+              <p>
+                تطبيق 'رحلة': احجز رحلاتك بسهولة واستمتع بتجربة سفر مثيرة تشكيلة
+                واسعة من الوجهات، عروض حصرية، وخدمة مميزة. اختر "رحلة" لتحقيق
+                أحلامك السياحية بكل يسر وراحة
+              </p>
+              <a href="#">...اقرأ اكثر</a>
+            </div>
+
+            <div class="newsletter box">
+              <h3>اشترك و ابقَ على اطلاعٍ جديد مع رحله</h3>
+              <input type="email" placeholder="البريد الاكتروني" />
+              <button type="submit">اشترك الأن</button>
+            </div>
+
+            <div class="mobile-app box">
+              <h3>حَمِّل تطبيق رحلة</h3>
+              <div class="app-store store">
+                <i class="fa-brands fa-apple"></i>
+                <div class="store-info">
+                  <p>Available on the</p>
+                  <h4>App Store</h4>
+                </div>
+              </div>
+              <div class="google-play store">
+                <i class="fa-brands fa-google-play"></i>
+                <div class="store-info">
+                  <p>GET IT ON</p>
+                  <h4>Google play</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="customer-reviews box">
+              <h3>مراجعات العملاء</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4>٤.٧ - ممتاز</h4>
+              <p>بناءً على ٢٤٥٧ مراجعه</p>
+            </div>
+
+            <div class="booking-info box">
+              <h3>احجز وانت واثق</h3>
+              <div class="infos">
+                <div class="info">
+                  <div class="icon">
+                    <i class="fa-solid fa-earth-africa"></i>
+                  </div>
+                  <div class="info-content">
+                    <h4>Website</h4>
+                    <a href="index.html">https://haus-7v4.pages.dev</a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="info-content">
+                    <h4>Phone</h4>
+                    <a href="index.html">+20 36911967</a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="info-content">
+                    <h4>Email us</h4>
+                    <a href="index.html">tours@rihaltravel.com</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-features">
+                <div class="feature">
+                  <div class="icon"><i class="bx bx-check-double"></i></div>
+                  <div class="feature-content">
+                    <h4>رحلات أكثر أمانا</h4>
+                    <p>
+                      يتم اجراء عمليات التدقيق وتقييم المخاطر لكل وجهة قبل
+                      استثناف عمليتنا. نحن أيضًا نعزز بروتوكول النظافة والتنظيف
+                    </p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="icon"><i class="bx bx-check-double"></i></div>
+                  <div class="feature-content">
+                    <h4>حجوزات مرنة</h4>
+                    <p>
+                      هل تريد أو تحتاج الي تغيير خطتك؟ لقد جعلنا شروط الحجز
+                      الخاصه بنا اكثر مرونة للسماع بالالعاء وتغيير التاريخ (تطبق
+                      الشروط)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-reviews">
+      <div class="container">
+        <div class="content">
+          <div class="controls-title">
+            <div class="arrows">
+              <div class="arrow left">
+                <div class="arr left"></div>
+              </div>
+              <div class="arrow right">
+                <div class="arr right"></div>
+              </div>
+            </div>
+            <div class="title">
+              <h3>مراجـعات عملائنـا</h3>
+            </div>
+          </div>
+          <ul class="reviews">
+            <li class="review-card">
+              <h4 class="review-title">مغامرة لا تُنسى</h4>
+              <p class="review-content">
+                تجربة رائعة! قمت بحجز رحلتي من خلال هذا الموقع، وكانت كل
+                التفاصيل مرتبة بشكل رائع. تنوعت الوجهات وكانت تجربة لا تُنسى
+              </p>
+              <div class="reviewer">
+                <span class="name">Taysser Mahmoud</span>|<span class="date"
+                  >١٥ يناير ٢٠٢٣</span
+                >
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </li>
+
+            <li class="review-card">
+              <h4 class="review-title">تنظيم رائع وخدمة ممتازة</h4>
+              <p class="review-content">
+                قمت بحجز رحلتي ووجدت كل شيء مرتب وواضح. كانت الخدمة جيدة، لكن قد
+                تحتاج بعض الجولات إلى المزيد من التنظيم
+              </p>
+              <div class="reviewer">
+                <span class="name"> Rima Hassan</span>|<span class="date">
+                  ٥ أبريل ٢٠٢٣
+                </span>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+            </li>
+
+            <li class="review-card">
+              <h4 class="review-title">رحلة مثيرة وخيارات متنوعة</h4>
+              <p class="review-content">
+                اخترت رحلة مميزة من بين الخيارات الرائعة المقدمة. كانت تجربة
+                فريدة ومليئة بالمغامرات
+              </p>
+              <div class="reviewer">
+                <span class="name">Adel Saudi</span>|<span class="date"
+                  >٢٦ سبتمبر ٢٠٢٢</span
+                >
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+            </li>
+
+            <li class="review-card">
+              <h4 class="review-title">رحلة هادئة ورائعة</h4>
+              <p class="review-content">
+                استمتعت برحلتي إلى وجهة الطبيعة الخلابة. خدمة رائعة وتنظيم ممتاز
+              </p>
+              <div class="reviewer">
+                <span class="name">Seif Ayman</span>|<span class="date"
+                  >٣ أغسطس ٢٠٢٣</span
+                >
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </li>
+
+            <li class="review-card">
+              <h4 class="review-title">تجربة جيدة بسعر معقول</h4>
+              <p class="review-content">
+                كانت رحلتي بشكل عام جيدة. الأسعار مناسبة وتوفرت تجربة جيدة
+                بالنسبة للميزانية
+              </p>
+              <div class="reviewer">
+                <span class="name">Salem Fathy</span>|<span class="date"
+                  >٦ يناير ٢٠٢٣
+                </span>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+            </li>
+
+            <li class="review-card">
+              <h4 class="review-title">مفاجأة إيجابية</h4>
+              <p class="review-content">
+                لقد فاجأني الموقع بتنظيم رائع واختيار متنوع. كانت التجربة
+                إيجابية بشكل كبير
+              </p>
+              <div class="reviewer">
+                <span class="name">Esraa Nashaat</span>|<span class="date"
+                  >٢٨ سبتمبر ٢٠٢٢</span
+                >
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </li>
+
+            <li class="review-card">
+              <h4 class="review-title">بحاجة إلى تحسينات صغيرة</h4>
+              <p class="review-content">
+                تجربة مرضية، ولكن هناك بعض الجوانب التي تحتاج إلى تحسين. قد تكون
+                الخيارات أكثر تنوعاً والتنظيم أفضل
+              </p>
+              <div class="reviewer">
+                <span class="name">Fatma Mohamed</span>|<span class="date"
+                  >١٥ يوليو ٢٠٢٣
+                </span>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsors">
+      <div class="container">
+        <div class="content">
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/egyptair-logo.svg" />
+          </div>
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/Emirates_logo.svg" />
+          </div>
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/hilton-international.svg" />
+          </div>
+          <div class="sponsor-company">
+            <img
+              src="imgs/sponsors/four-seasons-hotels-limited-vector-logo.svg"
+            />
+          </div>
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/saudi-airlines-logo.svg" />
+          </div>
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/Qatar_Airways_logo.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-section">
+        <div class="brand-section">
+          <div class="logo-img">
+            <img src="logo.png" />
+          </div>
+          <div class="app-section">
+            <div class="heading">
+              <h3>حَمِّل تطبيق رحلة</h3>
+            </div>
+            <div class="stores-icons">
+              <div class="store">
+                <i class="fa-brands fa-apple"></i>
+                <div class="store-info">
+                  <p>Available on the</p>
+                  <h4>App Store</h4>
+                </div>
+              </div>
+              <div class="store">
+                <i class="fa-brands fa-google-play"></i>
+                <div class="store-info">
+                  <p>GET IT ON</p>
+                  <h4>Google play</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="links-section">
+          <div class="links-column">
+            <ul>
+              <li><a href="#">مساعدة</a></li>
+              <li><a href="#">FAQ'S</a></li>
+              <li><a href="#">إعدادات الخصوصية</a></li>
+              <li><a href="#">تسجيل الدخول</a></li>
+            </ul>
+          </div>
+          <div class="links-column">
+            <ul>
+              <li><a href="#">سياسة ملفات تعريف الارتباط</a></li>
+              <li><a href="#">سياسة الخصوصية</a></li>
+              <li><a href="#">بنود الخدمة</a></li>
+              <li><a href="#">تفاصيل الشركه</a></li>
+            </ul>
+          </div>
+          <div class="links-column">
+            <ul>
+              <li class="dropdown">
+                <div class="title">
+                  <span><i class="bx bx-chevron-down"></i></span>استكشف
+                </div>
+                <ul class="collapse">
+                  <li><a href="#">الرحلات والعطلات</a></li>
+                  <li><a href="#">المدن</a></li>
+                  <li><a href="#">احصل علي التطبيق</a></li>
+                  <li><a href="#">خريطة الموقع</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <div class="title">
+                  <span><i class="bx bx-chevron-down"></i></span>الشركة
+                </div>
+                <ul class="collapse expand">
+                  <li><a href="#">معلومات عنا</a></li>
+                  <li><a href="#">لماذا تختار رحلة ؟</a></li>
+                  <li><a href="#">امكانية الوصول</a></li>
+                  <li><a href="#">الوظائف</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <div class="title">
+                  <span><i class="bx bx-chevron-down"></i></span>الشركاء
+                </div>
+                <ul class="collapse">
+                  <li><a href="#">اعمل معنا</a></li>
+                  <li><a href="#">الجهات المتعاونه</a></li>
+                  <li><a href="#">النظام المتقدم لمعلومات المسافرين</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-section">
+        <p>قارن الرحلات الرخيصة واحجزها من خلال رحلة</p>
+        <p>Rihla Ltd 2002 – 2023 ©</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

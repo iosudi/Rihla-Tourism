@@ -175,6 +175,144 @@ function changeInnerHtml() {
   }
 }
 
-// Call the function on page load and window resize
 changeInnerHtml();
 $(window).resize(changeInnerHtml);
+
+// hell
+const rihlaInfo = $(".rihla-info");
+
+const postsContent = $(".posts-content");
+
+var rihlaInfoOffsetTop = rihlaInfo.offset().top;
+
+let rihlaInfoHeight = rihlaInfo.height();
+
+let postsContentOffsetTop = postsContent.offset().top;
+
+$(window).scroll(function () {
+  let scrollPosition = $(window).scrollTop();
+
+  let rihlaInfoBottom = rihlaInfoOffsetTop + rihlaInfoHeight;
+
+  let postsContentBottom = postsContentOffsetTop + postsContent.height();
+
+  if (
+    scrollPosition >= rihlaInfoOffsetTop &&
+    scrollPosition < postsContentBottom - rihlaInfoHeight
+  ) {
+    var topValue = scrollPosition - rihlaInfoOffsetTop;
+    rihlaInfo.css({ position: "relative", top: topValue + 70 + "px" });
+  } else if (scrollPosition >= postsContentBottom - rihlaInfoHeight) {
+    rihlaInfo.css({
+      position: "relative",
+      top:
+        postsContentBottom - rihlaInfoHeight - rihlaInfoOffsetTop - 70 + "px",
+    });
+  } else {
+    rihlaInfo.css({ position: "relative", top: "0" });
+  }
+});
+
+// Carousel cards functionality
+const reviewCarousel = $(".customer-reviews .reviews");
+const reviewArrows = $(".customer-reviews .arrows .arrow");
+const reviewFirstCard = $(".customer-reviews .review-card").outerWidth(true);
+const reviewCarouselChildren = reviewCarousel.children().toArray();
+
+// Initialize variables for dragging state and position
+let review_isDragging = false,
+  review_startX,
+  review_startScrollLeft,
+  review_timeoutId;
+
+// Calculate the number of cards per view
+let reviewCardPreview = Math.round(
+  reviewCarousel.outerWidth(true) / reviewFirstCard
+);
+
+// Prepend and append cards for infinite scrolling effect
+reviewCarouselChildren
+  .slice(-reviewCardPreview)
+  .reverse()
+  .forEach(function (card) {
+    reviewCarousel.prepend($(card).prop("outerHTML"));
+  });
+
+reviewCarouselChildren.slice(0, reviewCardPreview).forEach(function (card) {
+  reviewCarousel.append($(card).prop("outerHTML"));
+});
+
+// Event handlers for arrow clicks
+reviewArrows.each(function () {
+  $(this).on("click", function (e) {
+    const arrow = $(this);
+    const isLeftArrow = arrow.hasClass("left");
+    const scrollAmount = isLeftArrow ? -reviewFirstCard : reviewFirstCard;
+
+    reviewCarousel.scrollLeft(reviewCarousel.scrollLeft() + scrollAmount);
+  });
+});
+
+// Functions for dragging, infinite scrolling, and auto sliding
+const reviewDragStart = function (e) {
+  review_isDragging = true;
+  reviewCarousel.addClass("dragging");
+  review_startX = e.pageX;
+  review_startScrollLeft = reviewCarousel.scrollLeft();
+};
+
+const reviewDragStop = function () {
+  review_isDragging = false;
+  reviewCarousel.removeClass("dragging");
+};
+
+const reviewDragging = function (e) {
+  if (!review_isDragging) return;
+  reviewCarousel.scrollLeft(review_startScrollLeft - (e.pageX - review_startX));
+};
+
+const reviewInfiniteScroll = function () {
+  const reviewCarouselScrollLeft = reviewCarousel.scrollLeft();
+  const reviewCarouselScrollWidth = reviewCarousel[0].scrollWidth;
+  const reviewCarouselWidth = reviewCarousel.outerWidth();
+
+  if (reviewCarouselScrollLeft === 0) {
+    reviewCarousel.addClass("no-transition");
+    reviewCarousel.scrollLeft(
+      reviewCarouselScrollWidth - 2 * reviewCarouselWidth
+    );
+    reviewCarousel.removeClass("no-transition");
+  } else if (
+    reviewCarouselScrollLeft ===
+    Math.floor(reviewCarouselScrollWidth - reviewCarouselWidth)
+  ) {
+    reviewCarousel.addClass("no-transition");
+    reviewCarousel.scrollLeft(reviewCarouselWidth);
+    reviewCarousel.removeClass("no-transition");
+  }
+
+  clearTimeout(review_timeoutId);
+  if (!reviewCarousel.is(":hover")) {
+    autoSlide();
+  }
+};
+
+const reviewAutoSlide = () => {
+  if ($(window).innerWidth() < 800) return;
+  review_timeoutId = setTimeout(
+    () =>
+      reviewCarousel.scrollLeft(reviewCarousel.scrollLeft() + reviewFirstCard),
+    3500
+  );
+};
+
+// Initial auto slide
+reviewAutoSlide();
+
+// Attach event handlers for dragging and resizing
+reviewCarousel.on("mousemove", reviewDragging);
+$(document).on("mouseup", reviewDragStop);
+reviewCarousel.on("mousedown", reviewDragStart);
+reviewCarousel.on("scroll", reviewInfiniteScroll);
+reviewCarousel.on("mouseenter", () => clearTimeout(review_timeoutId));
+reviewCarousel.on("mouseleave", reviewAutoSlide);

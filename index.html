@@ -23,7 +23,6 @@
 
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="responsive.css" />
 
     <!-- Page Title -->
     <title>استكشف الأنشطة السياحية في الوطن العربي مع رحلة</title>
@@ -31,7 +30,7 @@
 
   <body>
     <!-- Navigation Bar -->
-    <div class="phone-nav">
+ <div class="phone-nav">
       <div class="close-ico">
         <i class="fa-solid fa-x"></i>
       </div>
@@ -39,10 +38,10 @@
         <div class="nav-items">
           <ul>
             <!-- Navigation Links -->
-            <li><a href="#" class="active">اكتشف</a></li>
-            <li><a href="#">الأنشطة</a></li>
-            <li><a href="#"> المدونه</a></li>
-            <li><a href="#"> أي حاجه</a></li>
+            <li><a href="index.html" class="active">اكتشف</a></li>
+            <li><a href="blog.html"> المدونه</a></li>
+            <li><a href="activities.html">الأنشطة</a></li>
+            <li><a href="about.html"> عن رحلة</a></li>
           </ul>
         </div>
 
@@ -85,10 +84,10 @@
           <div class="nav-items">
             <ul>
               <!-- Navigation Links -->
-              <li><a href="#"> أي حاجه</a></li>
-              <li><a href="#"> المدونه</a></li>
-              <li><a href="#">الأنشطة</a></li>
-              <li><a href="#" class="active">اكتشف</a></li>
+              <li><a href="about.html"> عن رحلة</a></li>
+              <li><a href="blog.html"> المدونه</a></li>
+              <li><a href="activities.html">الأنشطة</a></li>
+              <li><a href="index.html" class="active">اكتشف</a></li>
             </ul>
           </div>
           <!-- Logo Section -->
@@ -99,7 +98,7 @@
           <div class="nav-options">
             <!-- Phone Number with Icon -->
             <div class="phone-number">
-              <span>023691196 <i class="bx bxs-phone-call"></i></span>
+              <span>+02 36911967 <i class="bx bxs-phone-call"></i></span>
             </div>
             <!-- Currency and Login Buttons with Icons -->
             <button class="language-btn btn">
@@ -116,468 +115,530 @@
       </nav>
     </header>
 
-    <section class="main">
+
+    <section class="land">
       <div class="container">
-        <div class="heading">
-          <h2>هل تبحث عن أنشطة سياحية؟</h2>
-          <p>اكتشف الأنشطة السياحية حول الوطن العربي مع <span>رحلة</span></p>
-        </div>
-        <div class="city-search">
-          <button>ابحث</button>
-          <div class="search-box">
-            <input type="text" placeholder="البحث بإسم المدينة" />
-            <span><i class="fa-solid fa-location-dot"></i></span>
+        <div class="content">
+          <div class="heading">
+            <p class="keywords">.تـجول.<span> اسـتكشف.</span> اكـتشف</p>
+            <h2 class="title">استكشف <span>آفاقك</span> بكل الطرق</h2>
+            <p class="paragraph">
+              استكشف الوجهات الأكثر إثارة في العالم واخلق ذكريات تدوم مدى الحياة
+            </p>
+          </div>
+          <div class="booking-box">
+            <div class="booking-control">
+              <div class="booking-options">
+                <ul>
+                  <li class="active">
+                    طيران <i class="fa-solid fa-plane-departure"></i>
+                  </li>
+                  <li>فنادق <i class="fa-solid fa-hotel"></i></li>
+                  <li>رحلات <i class="fa-solid fa-tree"></i></li>
+                </ul>
+              </div>
+              <div class="booking-info">
+                <div class="trip-options">
+                  <div class="trip-option">
+                    <input
+                      name="radio-group"
+                      id="radio2"
+                      class="trip-option__input"
+                      type="radio"
+                    />
+                    <label for="radio2" class="trip-option__label">
+                      <span class="trip-option__custom"></span>
+
+                      ذهاب وعوده
+                    </label>
+                  </div>
+                  <div class="trip-option">
+                    <input
+                      name="radio-group"
+                      id="radio1"
+                      class="trip-option__input"
+                      type="radio"
+                      checked
+                    />
+                    <label for="radio1" class="trip-option__label">
+                      <span class="trip-option__custom"></span>
+
+                      ذهاب فقط
+                    </label>
+                  </div>
+                  <div class="trip-option">
+                    <input
+                      name="radio-group"
+                      id="radio3"
+                      class="trip-option__input"
+                      type="radio"
+                    />
+                    <label for="radio3" class="trip-option__label">
+                      <span class="trip-option__custom"></span>
+
+                      وجهات متعدده
+                    </label>
+                  </div>
+                </div>
+                <div class="trip-control option-oneWay">
+                  <div class="from control from-to">
+                    <div class="input-box">
+                      <label>الوجهة</label>
+                      <div class="input-field">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="المدينة أو المطار" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="to control from-to">
+                    <div class="input-box">
+                      <label>المغادرة من</label>
+                      <div class="input-field">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="المدينة أو المطار" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="traveler-class control">
+                    <div class="label"><p>المسافرين, الدرجه</p></div>
+                    <div class="select">
+                      <div class="counter">
+                        <span class="numberOfTravllers">1</span>
+                        <span>مسافر</span>
+                      </div>
+                      <span class="icon">
+                        <i class="fa-solid fa-caret-down"></i>
+                      </span>
+                    </div>
+                    <div class="class"><span>السياحية</span></div>
+                    <div class="selectWindow">
+                      <div class="ages">
+                        <div class="fieldSet">
+                          <label
+                            >بالغين
+                            <select>
+                              <option value="١">١</option>
+                              <option value="٢">٢</option>
+                              <option value="٣">٣</option>
+                              <option value="٤">٤</option>
+                              <option value="٥">٥</option>
+                              <option value="٦">٦</option>
+                              <option value="٧">٧</option>
+                              <option value="٨">٨</option>
+                              <option value="٩">٩</option>
+                            </select></label
+                          >
+                          <div class="ageRange">(سنة +١٢)</div>
+                        </div>
+
+                        <div class="fieldSet">
+                          <label
+                            >رضيع
+                            <select>
+                              <option value="١">١</option>
+                              <option value="٢">٢</option>
+                              <option value="٣">٣</option>
+                              <option value="٤">٤</option>
+                              <option value="٥">٥</option>
+                              <option value="٦">٦</option>
+                              <option value="٧">٧</option>
+                              <option value="٨">٨</option>
+                              <option value="٩">٩</option>
+                            </select></label
+                          >
+                          <div class="ageRange">(أقل من سنتين)</div>
+                        </div>
+
+                        <div class="fieldSet">
+                          <label
+                            >أطفال
+                            <select>
+                              <option value="١">١</option>
+                              <option value="٢">٢</option>
+                              <option value="٣">٣</option>
+                              <option value="٤">٤</option>
+                              <option value="٥">٥</option>
+                              <option value="٦">٦</option>
+                              <option value="٧">٧</option>
+                              <option value="٨">٨</option>
+                              <option value="٩">٩</option>
+                            </select></label
+                          >
+                          <div class="ageRange">(سنة ١٢-٢)</div>
+                        </div>
+                      </div>
+                      <div class="selectClass">
+                        <div class="label">
+                          الدرجة
+                          <select>
+                            <option value="السياحية">السياحية</option>
+                            <option value="رجال أعمال">رجال أعمال</option>
+                            <option value="الأولي">الأولي</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="confirmButton">
+                        <button>
+                          موافق
+                          <span
+                            ><i class="fa-regular fa-circle-check"></i
+                          ></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="start-date control">
+                    <label>تاريخ الرحلة</label>
+                    <input type="date" />
+                  </div>
+
+                  <button class="searchButton">
+                    <i class="bx bx-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="activities">
+    <section class="packages-section">
       <div class="container">
-        <div class="title">
-          <h2>رحلات <span>رائعة</span></h2>
-          <p>إستمتع بأفضل العروض والرحلات</p>
-        </div>
-        <div class="activities-cards">
-          <div class="activity large">
-            <div class="trip-image">
-              <div class="booking-button">
-                <button>احجز</button>
-              </div>
-              <img
-                src="https://cdn.pixabay.com/photo/2018/07/23/11/34/hurghada-3556670_1280.jpg"
-                draggable="false"
-              />
-              <div class="trip-cost">
-                <button>٢٢٠$ - <span>للشخص</span></button>
-              </div>
-            </div>
-            <div class="trip-description">
-              <div class="trip-name">
-                <h3>استجمام على شواطئ البحر الأحمر في الغردقة</h3>
-              </div>
-              <div class="booking-button">
-                <button>احجز</button>
-              </div>
-              <div class="trip-features">
-                <div class="check-in feature">
-                  <p>٢٠٢٤.٩.٢٦ - <span>٥ أيام</span></p>
-                  <span><i class="fa-regular fa-calendar-days"></i></span>
-                </div>
-                <div class="country feature">
-                  <p>مصر</p>
-                  <span><i class="fa-solid fa-map-pin"></i></span>
-                </div>
-                <div class="food feature">
-                  <p>فطار - عشاء</p>
-                  <span><i class="fa-solid fa-utensils"></i></span>
-                </div>
-              </div>
-              <div class="trip-details">
-                <p>
-                  انطلق في رحلة 5 أيام إلى الغردقة، استمتع بشواطئها الذهبية
-                  والغطس في الشعاب المرجانية الرائعة. تذوق المأكولات البحرية
-                  اللذيذة
-                </p>
-              </div>
-              <div class="trip-cost">
-                <button>٢٢٠$ - <span>للشخص</span></button>
-              </div>
-            </div>
+        <div class="content">
+          <div class="heading">
+            <h3>الرحلات <span>الرائجة</span></h3>
+            <p>الرحلات السياحيه الاكثر شعبية المقدمة لك</p>
           </div>
-
-          <div class="activity">
-            <div class="trip-image">
-              <div class="booking-button">
-                <button>احجز</button>
+          <div class="packages">
+            <div class="package">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/15177904/pexels-photo-15177904/free-photo-of-museum-of-the-future-in-dubai.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                />
               </div>
-              <img
-                src="https://cdn.pixabay.com/photo/2017/06/20/23/59/tunisia-2425441_1280.jpg"
-                draggable="false"
-              />
-              <div class="trip-cost">
-                <button>٢٠٠$ - <span>للشخص</span></button>
+              <div class="package-info">
+                <div class="title-stars">
+                  <div class="package-name">
+                    <h4>متحف المستقبل</h4>
+                    <p>
+                      <span><i class="fa-solid fa-location-dot"></i></span
+                      >الامارات, دبي
+                    </p>
+                  </div>
+                  <div class="stars">
+                    ٤.٥
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                </div>
+                <div class="package-description">
+                  <p>
+                    امتلك تذكرة إلى عالم المستقبل في متحف دبي، حيث تتحقق الأحلام
+                    بتقنيات مذهلة ورؤى ثورية، في تجربة تفاعلية تنقلك إلى زمن
+                    قادم
+                  </p>
+                </div>
+                <div class="package-cost">
+                  <div class="cost">$١٨٦.٠٠</div>
+                  <button class="booking">احجز الان</button>
+                </div>
               </div>
             </div>
-            <div class="trip-description">
-              <div class="trip-name">
-                <h3>تونس: تجربة سياحية مميزة</h3>
+            <div class="package">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/16025597/pexels-photo-16025597/free-photo-of-two-men-walk-in-the-alley.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                />
               </div>
-              <div class="trip-features">
-                <div class="check-in feature">
-                  <p>٢٠٢٤.٨.٩ - <span>٤ أيام</span></p>
-                  <span><i class="fa-regular fa-calendar-days"></i></span>
+              <div class="package-info">
+                <div class="title-stars">
+                  <div class="package-name">
+                    <h4>مدينة التشفشاون</h4>
+                    <p>
+                      <span><i class="fa-solid fa-location-dot"></i></span
+                      >المغرب, تشفشاون
+                    </p>
+                  </div>
+                  <div class="stars">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    ٤.٣
+                  </div>
                 </div>
-                <div class="country feature">
-                  <p>تونس</p>
-                  <span><i class="fa-solid fa-map-pin"></i></span>
+                <div class="package-description">
+                  <p>
+                    استمتع بسحر الأزرق الفاتح في رحلة إلى شفشاون، المدينة
+                    الرائعة بالأزقة الملونة والثقافة الأمازيغية الفريدة في شمال
+                    المغرب
+                  </p>
                 </div>
-                <div class="food feature">
-                  <p>فطار - عشاء</p>
-                  <span><i class="fa-solid fa-utensils"></i></span>
+                <div class="package-cost">
+                  <div class="cost">$١١٧.٠٠</div>
+                  <button class="booking">احجز الان</button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="activity">
-            <div class="trip-image">
-              <div class="booking-button">
-                <button>احجز</button>
+            <div class="package">
+              <div class="image">
+                <img
+                  src="https://images.pexels.com/photos/4546396/pexels-photo-4546396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                />
               </div>
-              <img
-                src="https://cdn.pixabay.com/photo/2019/03/09/21/30/downtown-4045035_1280.jpg"
-                draggable="false"
-              />
-              <div class="trip-cost">
-                <button>٦٠٠$ - <span>للشخص</span></button>
-              </div>
-            </div>
-            <div class="trip-description">
-              <div class="trip-name">
-                <h3>جولة في مدينة دبي الحديثة</h3>
-              </div>
-              <div class="trip-features">
-                <div class="check-in feature">
-                  <p>٢٠٢٤.٦.١٦ - <span>٣ أيام</span></p>
-                  <span><i class="fa-regular fa-calendar-days"></i></span>
+              <div class="package-info">
+                <div class="title-stars">
+                  <div class="package-name">
+                    <h4>برج خليفه</h4>
+                    <p>
+                      <span><i class="fa-solid fa-location-dot"></i></span
+                      >الامارات, دبي
+                    </p>
+                  </div>
+                  <div class="stars">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    ٤.٩
+                  </div>
                 </div>
-                <div class="country feature">
-                  <p>الامارات</p>
-                  <span><i class="fa-solid fa-map-pin"></i></span>
+                <div class="package-description">
+                  <p>
+                    اطلع على عالم السماء من أعلى برج خليفة في دبي، حيث تمتد
+                    المناظر الخلابة وتجتمع الفخامة في أعلى ناطحة سحاب في العالم
+                  </p>
                 </div>
-                <div class="food feature">
-                  <p>فطار - عشاء</p>
-                  <span><i class="fa-solid fa-utensils"></i></span>
+                <div class="package-cost">
+                  <div class="cost">$٢٤٩.٠٠</div>
+                  <button class="booking">احجز الان</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="activity">
-            <div class="trip-image">
-              <div class="booking-button">
-                <button>احجز</button>
-              </div>
-              <img
-                src="https://cdn.pixabay.com/photo/2012/11/22/08/18/mecca-66965_1280.jpg"
-                draggable="false"
-              />
-              <div class="trip-cost">
-                <button>٤٠٠$ - <span>للشخص</span></button>
-              </div>
-            </div>
-            <div class="trip-description">
-              <div class="trip-name">
-                <h3>الطبيعة الخلّابة في السعودية</h3>
-              </div>
-              <div class="trip-features">
-                <div class="check-in feature">
-                  <p>٢٠٢٤.١.١ - <span>٤ أيام</span></p>
-                  <span><i class="fa-regular fa-calendar-days"></i></span>
-                </div>
-                <div class="country feature">
-                  <p>السعودية</p>
-                  <span><i class="fa-solid fa-map-pin"></i></span>
-                </div>
-                <div class="food feature">
-                  <p>فطار - عشاء</p>
-                  <span><i class="fa-solid fa-utensils"></i></span>
-                </div>
-              </div>
-            </div>
+          <div class="more-button">
+            <span class="line left"></span>
+            <button>اكتشف المزيد</button>
+            <span class="line right"></span>
           </div>
-          <div class="activity">
-            <div class="trip-image">
-              <div class="booking-button">
-                <button>احجز</button>
-              </div>
-              <img
-                src="https://cdn.pixabay.com/photo/2020/03/29/21/44/petra-4982346_1280.jpg"
-                draggable="false"
-              />
-              <div class="trip-cost">
-                <button>١٥٠$ - <span>للشخص</span></button>
-              </div>
-            </div>
-            <div class="trip-description">
-              <div class="trip-name">
-                <h3>الأردن: بوابة إلى عجائب البتراء</h3>
-              </div>
-              <div class="trip-features">
-                <div class="check-in feature">
-                  <p>٢٠٢٤.٤.١٤ - <span>٤ أيام</span></p>
-                  <span><i class="fa-regular fa-calendar-days"></i></span>
-                </div>
-                <div class="country feature">
-                  <p>الأردن</p>
-                  <span><i class="fa-solid fa-map-pin"></i></span>
-                </div>
-                <div class="food feature">
-                  <p>فطار - عشاء</p>
-                  <span><i class="fa-solid fa-utensils"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="more-button">
-          <span class="line left"></span>
-          <button>المزيد</button>
-          <span class="line right"></span>
         </div>
       </div>
     </section>
 
-    <section id="posts">
+    <section class="experience-section">
       <div class="container">
-        <div class="title">
-          <h2>رحلة <span>توصي بـ</span></h2>
-          <p>الرحلات الأكثر حجزًا على موقعنا</p>
-        </div>
-        <div class="slider">
-          <div class="arrow left">
-            <div class="arrow-left"></div>
+        <div class="content">
+          <div class="heading">
+            <h3>الخبرة <span>و الخدمات</span></h3>
+            <p>الخبرة والخدمة علي أعلي مستوي من الجودة</p>
           </div>
-          <ul class="carousel">
-            <li class="activity">
-              <div class="trip-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2019/09/24/09/58/marrakech-4500910_1280.jpg"
-                  draggable="false"
-                />
-              </div>
-              <div class="trip-description">
-                <div class="trip-name">
-                  <h3>مراكش: مدينة الألوان الزاهية</h3>
-                </div>
-                <div class="booking-button">
-                  <button>احجز</button>
-                </div>
-                <div class="trip-features">
-                  <div class="check-in feature">
-                    <p>٢٠٢٤.٤.٢٤ - <span>٤ أيام</span></p>
-                    <span><i class="fa-regular fa-calendar-days"></i></span>
+          <div class="experience-grid">
+            <div class="image">
+              <img
+                src="https://images.pexels.com/photos/1433052/pexels-photo-1433052.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              />
+            </div>
+            <div class="boxes">
+              <div class="row">
+                <div class="experience-box">
+                  <div class="title">
+                    <h4>+٣٠</h4>
+                    <h5>سنه من الخبره</h5>
                   </div>
-                  <div class="country feature">
-                    <p>المغرب</p>
-                    <span><i class="fa-solid fa-map-pin"></i></span>
-                  </div>
-                  <div class="food feature">
-                    <p>فطار - عشاء</p>
-                    <span><i class="fa-solid fa-utensils"></i></span>
-                  </div>
+                  <p>استمتع برحلات سياحية استثنائية مع خبرة لا مثيل لها</p>
                 </div>
-                <div class="trip-cost">
-                  <button>٢٠٠$ - <span>للشخص</span></button>
-                </div>
-              </div>
-            </li>
 
-            <li class="activity">
-              <div class="trip-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2019/11/18/06/07/al-aqsa-4634017_1280.jpg"
-                  draggable="false"
-                />
-              </div>
-              <div class="trip-description">
-                <div class="trip-name">
-                  <h3>القدس: بين أضواء التاريخ وسحر الروح</h3>
-                </div>
-                <div class="booking-button">
-                  <button>احجز</button>
-                </div>
-                <div class="trip-features">
-                  <div class="check-in feature">
-                    <p>٢٠٢٤.٨.٩ - <span>٤ أيام</span></p>
-                    <span><i class="fa-regular fa-calendar-days"></i></span>
+                <div class="experience-box">
+                  <div class="title">
+                    <h4>٤٠+ الـف</h4>
+                    <h5>مسافر مسرور</h5>
                   </div>
-                  <div class="country feature">
-                    <p>فلسطين</p>
-                    <span><i class="fa-solid fa-map-pin"></i></span>
-                  </div>
-                  <div class="food feature">
-                    <p>فطار - عشاء</p>
-                    <span><i class="fa-solid fa-utensils"></i></span>
-                  </div>
-                </div>
-                <div class="trip-cost">
-                  <button>٣٥٠$ - <span>للشخص</span></button>
+                  <p>تجربة فريدة مع أكثر من ٤٠,٠٠٠ مسافر سعيد معنا</p>
                 </div>
               </div>
-            </li>
 
-            <li class="activity">
-              <div class="trip-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2014/11/05/13/48/dahab-517898_1280.jpg"
-                  draggable="false"
-                />
-              </div>
-              <div class="trip-description">
-                <div class="trip-name">
-                  <h3>دهب: شاطئ ذهبي استوائي</h3>
-                </div>
-                <div class="booking-button">
-                  <button>احجز</button>
-                </div>
-                <div class="trip-features">
-                  <div class="check-in feature">
-                    <p>٢٠٢٤.٣.٣ - <span>٣ أيام</span></p>
-                    <span><i class="fa-regular fa-calendar-days"></i></span>
+              <div class="row">
+                <div class="experience-box">
+                  <div class="title">
+                    <h4>حـجـز</h4>
+                    <h5>سهل</h5>
                   </div>
-                  <div class="country feature">
-                    <p>مصر</p>
-                    <span><i class="fa-solid fa-map-pin"></i></span>
-                  </div>
-                  <div class="food feature">
-                    <p>فطار - عشاء</p>
-                    <span><i class="fa-solid fa-utensils"></i></span>
-                  </div>
+                  <p>حجز سهل وسريع يجعل رحلتك ممتعة وميسرة بكل يسر</p>
                 </div>
-                <div class="trip-cost">
-                  <button>٤٥٠$ - <span>للشخص</span></button>
-                </div>
-              </div>
-            </li>
 
-            <li class="activity">
-              <div class="trip-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2013/10/13/10/50/pyramid-195009_1280.jpg"
-                  draggable="false"
-                />
-              </div>
-              <div class="trip-description">
-                <div class="trip-name">
-                  <h3>الأهرامات: أسرار التاريخ القديم</h3>
-                </div>
-                <div class="booking-button">
-                  <button>احجز</button>
-                </div>
-                <div class="trip-features">
-                  <div class="check-in feature">
-                    <p>٢٠٢٤.١.١٦ - <span>٤ أيام</span></p>
-                    <span><i class="fa-regular fa-calendar-days"></i></span>
+                <div class="experience-box">
+                  <div class="title">
+                    <h4>أفـضـل</h4>
+                    <h5>المرشدين السياحين</h5>
                   </div>
-                  <div class="country feature">
-                    <p>مصر</p>
-                    <span><i class="fa-solid fa-map-pin"></i></span>
-                  </div>
-                  <div class="food feature">
-                    <p>فطار - عشاء</p>
-                    <span><i class="fa-solid fa-utensils"></i></span>
-                  </div>
-                </div>
-                <div class="trip-cost">
-                  <button>٢٢٠$ - <span>للشخص</span></button>
+                  <p>استمتع بتوجيهات أفضل مرشدينا السياحيين في كل رحلة</p>
                 </div>
               </div>
-            </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <li class="activity">
-              <div class="trip-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2015/09/14/17/31/dubai-939844_1280.jpg"
-                  draggable="false"
-                />
+    <section class="offers-section">
+      <div class="container">
+        <div class="content">
+          <div class="heading">
+            توفير ضخم عبر دول الوطن العربي | <span>مع رحلة</span>
+          </div>
+          <div class="deals">
+            <div class="deal">
+              <div class="title">
+                <i class="bx bxs-offer"></i>
+                <h3>عروض <span>الطيور الباكرة</span></h3>
               </div>
-              <div class="trip-description">
-                <div class="trip-name">
-                  <h3>الإمارات: حضارة ورفاهية مذهلة</h3>
-                </div>
-                <div class="booking-button">
-                  <button>احجز</button>
-                </div>
-                <div class="trip-features">
-                  <div class="check-in feature">
-                    <p>٢٠٢٤.٧.١٦ - <span>٣ أيام</span></p>
-                    <span><i class="fa-regular fa-calendar-days"></i></span>
-                  </div>
-                  <div class="country feature">
-                    <p>الإمارات</p>
-                    <span><i class="fa-solid fa-map-pin"></i></span>
-                  </div>
-                  <div class="food feature">
-                    <p>فطار - عشاء</p>
-                    <span><i class="fa-solid fa-utensils"></i></span>
-                  </div>
-                </div>
-                <div class="trip-cost">
-                  <button>٣٥٠$ - <span>للشخص</span></button>
-                </div>
+              <p>استمتع بتوفيرات رائعة مع عروض الطيور الباكرة قبل الجميع</p>
+            </div>
+            <div class="deal">
+              <div class="title">
+                <i class="bx bxs-offer"></i>
+                <h3>عروض <span>اللحظه الاخيرة</span></h3>
               </div>
-            </li>
+              <p>لحظات حاسمة! احصل على عروض لا تقاوم في آخر لحظة</p>
+            </div>
+            <div class="deal">
+              <div class="title">
+                <i class="bx bxs-offer"></i>
+                <h3>عروض <span>٢ لسعر ١</span></h3>
+              </div>
+              <p>احجز الآن واحصل على تجربة فريدة مع عروض ٢ لسعر ١.</p>
+            </div>
+            <div class="deal">
+              <div class="title">
+                <i class="bx bxs-offer"></i>
+                <h3>عروض <span>الأعضاء الحصرية</span></h3>
+              </div>
+              <p>انضم إلينا واستفد من عروض حصرية مخصصة لأعضاء موقعنا الرائع</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <li class="activity">
-              <div class="trip-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2021/05/24/18/58/blue-6280277_1280.jpg"
-                  draggable="false"
-                />
-              </div>
-              <div class="trip-description">
-                <div class="trip-name">
-                  <h3>تشفشوان: المدينة الساحرة</h3>
-                </div>
-                <div class="booking-button">
-                  <button>احجز</button>
-                </div>
-                <div class="trip-features">
-                  <div class="check-in feature">
-                    <p>٢٠٢٤.٥.١٦ - <span>٤ أيام</span></p>
-                    <span><i class="fa-regular fa-calendar-days"></i></span>
-                  </div>
-                  <div class="country feature">
-                    <p>المغرب</p>
-                    <span><i class="fa-solid fa-map-pin"></i></span>
-                  </div>
-                  <div class="food feature">
-                    <p>فطار - عشاء</p>
-                    <span><i class="fa-solid fa-utensils"></i></span>
-                  </div>
-                </div>
-                <div class="trip-cost">
-                  <button>٣٠٠$ - <span>للشخص</span></button>
+    <section class="popular-destinations">
+      <div class="container">
+        <div class="content">
+          <div class="heading">
+            <h3>اشهر <span>الوجهات</span></h3>
+            <p>الوجهات السياحية الاكثر شهرة المقدمة لك</p>
+          </div>
+          <div class="destinations">
+            <div class="row first">
+              <div
+                class="destination"
+                style="
+                  background-image: url(https://images.pexels.com/photos/14435169/pexels-photo-14435169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+                "
+              >
+                <div class="title">
+                  <h3>اكشف</h3>
+                  <h4>مصر</h4>
                 </div>
               </div>
-            </li>
+              <div
+                class="destination"
+                style="
+                  background-image: url(https://images.pexels.com/photos/3889761/pexels-photo-3889761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+                "
+              >
+                <div class="title">
+                  <h3>تجول</h3>
+                  <h4>المغرب</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row second">
+              <div
+                class="destination"
+                style="
+                  background-image: url(https://images.pexels.com/photos/14765462/pexels-photo-14765462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+                "
+              >
+                <div class="title">
+                  <h3>المغامرة</h3>
+                  <h4>تونس</h4>
+                </div>
+              </div>
+              <div
+                class="destination"
+                style="
+                  background-image: url(https://images.pexels.com/photos/4560328/pexels-photo-4560328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+                "
+              >
+                <div class="title">
+                  <h3>استكشف</h3>
+                  <h4>الامارات</h4>
+                </div>
+              </div>
+              <div
+                class="destination"
+                style="
+                  background-image: url(https://images.pexels.com/photos/4388167/pexels-photo-4388167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+                "
+              >
+                <div class="title">
+                  <h3>اكتشف</h3>
+                  <h4>الأردن</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <li class="activity">
-              <div class="trip-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2014/11/05/13/48/dahab-517898_1280.jpg"
-                  draggable="false"
-                />
-              </div>
-              <div class="trip-description">
-                <div class="trip-name">
-                  <h3>دهب: شاطئ ذهبي استوائي</h3>
-                </div>
-                <div class="booking-button">
-                  <button>احجز</button>
-                </div>
-                <div class="trip-features">
-                  <div class="check-in feature">
-                    <p>٢٠٢٤.٣.٣ - <span>٣ أيام</span></p>
-                    <span><i class="fa-regular fa-calendar-days"></i></span>
-                  </div>
-                  <div class="country feature">
-                    <p>مصر</p>
-                    <span><i class="fa-solid fa-map-pin"></i></span>
-                  </div>
-                  <div class="food feature">
-                    <p>فطار - عشاء</p>
-                    <span><i class="fa-solid fa-utensils"></i></span>
-                  </div>
-                </div>
-                <div class="trip-cost">
-                  <button>٤٥٠$ - <span>للشخص</span></button>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="arrow right">
-            <div class="arrow-right"></div>
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="content">
+          <div class="heading">
+            <h3>اشترك الان و وفر</h3>
+            <h4>
+              مصدرك للحصول علي أفضل العروض من أفضل منظمي رحلات المغامرات في
+              الوطن العربي
+            </h4>
+            <p>اشترك الان ولا تفوت أي مغامرة أخري</p>
+          </div>
+          <div class="newsletter-form">
+            <h4>اشترك وانضم لأكثر من ٤٠,٠٠٠ عضو</h4>
+            <div class="input-group">
+              <input
+                type="email"
+                class="input"
+                id="Email"
+                name="Email"
+                placeholder="البريد الالكتروني"
+              />
+              <input class="button--submit" value="اشترك الان" type="submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsors">
+      <div class="container">
+        <div class="content">
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/egyptair-logo.svg" />
+          </div>
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/Emirates_logo.svg" />
+          </div>
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/hilton-international.svg" />
+          </div>
+          <div class="sponsor-company">
+            <img
+              src="imgs/sponsors/four-seasons-hotels-limited-vector-logo.svg"
+            />
+          </div>
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/saudi-airlines-logo.svg" />
+          </div>
+          <div class="sponsor-company">
+            <img src="imgs/sponsors/Qatar_Airways_logo.svg" />
           </div>
         </div>
       </div>

@@ -1,0 +1,65 @@
+$color_1: #fff;
+$color_2: #5abaf1;
+$color_3: #afafafb7;
+$color_4: #002fa4;
+$color_5: #fd8f1c;
+$color_5-1: #ff9f39;
+$color_6: #3e6be8;
+$color_7: #4d4d4d;
+$color_8: #474747;
+$color_9: #cfcfcfc7;
+$color_10: #cfcfcf;
+$color_11: #000;
+$color_12: #081d4e;
+$color_13: #9fa2a0;
+$color_14: #51534e;
+$color_15: #909192;
+$font-family_1: "Cairo", sans-serif;
+$font-family_2: "Noto Nastaliq Urdu", serif;
+$background-color_1: #fa9900;
+$background-color_2: #fff;
+$background-color_3: #0b3e91;
+$background-color_4: rgb(8, 7, 7);
+$background-color_5: #357398;
+$background-color_6: #f8f8f8;
+$background-color_7: #000;
+$background-color_8: #05203c;
+$background-color_9: rgb(255, 173, 40);
+$sections-bg: #eef5ff;
+$border-color: rgb(206, 206, 206);
+
+$offer-section-bg: #0b3e9198;
+$black-shadow-color_2: #fa9a0079;
+$black-shadow-color: #00000041;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space-bet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-col-space-bet-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-col-center-end {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}

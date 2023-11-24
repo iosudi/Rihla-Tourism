@@ -1,0 +1,408 @@
+@media (max-width: 1470px) {
+	.activities-cards {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 2em 5%;
+	}
+	.trips-recommendation {
+		.container {
+			.trips-carousel {
+				max-width: 1100px;
+				width: 100%;
+			}
+			.trips-slider {
+				padding: 0;
+			}
+			.left {
+				left: -55px;
+			}
+			.right {
+				right: -55px;
+			}
+		}
+	}
+}
+@media (max-width: 1045px) {
+	.nav-bar {
+		gap: 4em;
+	}
+	header {
+		.nav-items {
+			ul {
+				a {
+					font-size: 18px;
+				}
+			}
+		}
+		.nav-options {
+			.phone-number {
+				font-size: 15px;
+			}
+			.login.btn {
+				font-size: 15px;
+				i {
+					font-size: 15px;
+				}
+			}
+			.language-btn {
+				i {
+					font-size: 15px;
+				}
+			}
+		}
+		.logo {
+			img {
+				width: 5em;
+			}
+		}
+	}
+	.activities-cards {
+		padding: 2em 0%;
+	}
+	.activity {
+		h3 {
+			font-size: 18px;
+		}
+		.trip-details {
+			p {
+				font-size: 13px;
+			}
+		}
+		.trip-image {
+			.trip-cost {
+				button {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	#posts {
+		.container {
+			.carousel {
+				grid-auto-columns: calc((100% / 2) - 13px);
+			}
+		}
+	}
+	.footer-section {
+		.links-section {
+			flex-direction: column;
+			margin-right: 20px;
+		}
+		.links-column {
+			&:nth-child(2) {
+				border-bottom: 1px solid #a8a8a8;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	footer {
+		.links-section {
+			li {
+				padding-bottom: 5px;
+			}
+		}
+		.title {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+		}
+	}
+}
+@media (max-width: 923px) {
+	.main {
+		.heading {
+			h2 {
+				font-size: 45px;
+			}
+			p {
+				font-size: 20px;
+				span {
+					font-size: 25px;
+				}
+			}
+		}
+		.city-search {
+			width: 100%;
+			button {
+				height: 60px;
+				width: 15%;
+				font-size: 25px;
+			}
+			.search-box {
+				width: 80%;
+				height: 100%;
+				padding-right: 15px;
+				span {
+					i {
+						font-size: 20px;
+					}
+				}
+				input {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.activities-cards {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	.activity {
+		h3 {
+			font-size: 20px;
+		}
+		.trip-details {
+			p {
+				font-size: 15px;
+			}
+		}
+		.trip-image {
+			.trip-cost {
+				button {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	#posts {
+		.container {
+			padding: 0 1em;
+			position: relative;
+			height: 100%;
+		}
+	}
+}
+@media (max-width: 800px) {
+	header {
+		nav {
+			width: 100%;
+			padding: 1% 5%;
+		}
+		.nav-bar {
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+			gap: 0em;
+		}
+		.nav-items {
+			display: none;
+		}
+		.nav-options {
+			.login.btn {
+				display: none;
+			}
+			.phone-number {
+				i {
+					font-size: 20px;
+				}
+			}
+			.language-btn {
+				i {
+					font-size: 20px;
+				}
+			}
+		}
+		.collapsed-nav {
+			display: block;
+			font-size: 20px;
+		}
+		.logo {
+			img {
+				width: 7em;
+			}
+		}
+	}
+	.phone-nav {
+		.logo {
+			img {
+				width: 40%;
+			}
+		}
+	}
+}
+@media (max-width: 723px) {
+	#posts {
+		.container {
+			.carousel {
+				grid-auto-columns: calc((100% / 1));
+				.activity {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.activities-cards {
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+	}
+	.activity {
+		width: 400px;
+		.trip-details {
+			display: none;
+		}
+	}
+	.activity.large {
+		flex-direction: column;
+		.trip-cost {
+			button {
+				display: none;
+			}
+		}
+		.booking-button {
+			button {
+				display: none;
+			}
+		}
+		.trip-image {
+			.trip-cost {
+				button {
+					display: block;
+				}
+			}
+			.booking-button {
+				button {
+					display: block;
+				}
+			}
+		}
+	}
+	.more-button {
+		width: 80%;
+	}
+	footer {
+		.app-section {
+			.stores-icons {
+				flex-direction: column;
+				gap: 5px;
+				.store {
+					i {
+						font-size: 30px;
+					}
+				}
+			}
+			.store {
+				gap: 15px;
+				padding: 5px 15px;
+				width: 150px;
+				.store-info {
+					p {
+						font-size: 12px;
+					}
+					h4 {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		padding: 4em 1em 1em;
+	}
+	.footer-section {
+		.brand-section {
+			img {
+				width: 10em;
+				padding-bottom: 4em;
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.main {
+		.heading {
+			h2 {
+				font-size: 25px;
+			}
+			p {
+				font-size: 15px;
+				font-weight: 400;
+				span {
+					font-size: 20px;
+				}
+			}
+		}
+		.city-search {
+			button {
+				font-size: 20px;
+			}
+			.search-box {
+				input {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.activity {
+		width: 250px;
+	}
+	#posts {
+		.container {
+			padding: 0 1em;
+			.carousel {
+				.activity {
+					width: 100%;
+					height: 500px;
+					img {
+						height: 100%;
+					}
+				}
+			}
+			.activity {
+				.trip-description {
+					padding: 10px 10px;
+				}
+			}
+			.left {
+				left: -3%;
+			}
+			.right {
+				right: -3%;
+			}
+		}
+		.activity {
+			h3 {
+				font-size: 18px;
+			}
+			.trip-cost {
+				button {
+					padding: 0px 35px;
+					font-size: 15px;
+				}
+			}
+			.booking-button {
+				button {
+					padding: 0px 25px;
+					font-size: 15px;
+				}
+			}
+		}
+		.arrow {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.phone-nav {
+		.stores-icons {
+			gap: 0px;
+			.store {
+				width: 150px;
+				p {
+					font-size: 12px;
+				}
+				h4 {
+					font-size: 14px;
+				}
+				i {
+					font-size: 30px;
+				}
+			}
+		}
+		.nav-items {
+			ul {
+				font-size: 25px;
+			}
+		}
+		.login.btn {
+			font-size: 15px;
+			padding: 5px 50px;
+		}
+	}
+}

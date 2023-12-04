@@ -274,6 +274,12 @@ header.header-bg {
               border-top: 1px solid $border-color;
               width: 100%;
               padding: 15px 0;
+              .row {
+                @include flex-center;
+                flex-direction: row-reverse;
+                width: 100%;
+                justify-content: space-around
+              }
               .control {
                 @include flex-col-center;
                 align-items: end;
@@ -316,6 +322,7 @@ header.header-bg {
               }
 
               .traveler-class {
+                border-left: 0;
                 color: $border-color;
                 cursor: pointer;
                 .select {
@@ -340,7 +347,6 @@ header.header-bg {
               }
 
               .start-date {
-                border-left: 0;
                 input {
                   background: transparent;
                   outline: none;
@@ -647,6 +653,7 @@ header.header-bg {
         span {
           font-weight: 300;
           font-family: $font-family_2;
+          color: $color_5;
         }
       }
       .deals {
@@ -1406,7 +1413,7 @@ header.header-bg {
         padding: 25px;
         border-radius: 10px;
         box-shadow: 0 0 20px 2px $black-shadow-color;
-        width: 35%;
+        width: 350px;
         .input-box {
           @include flex-col-center;
           gap: 15px;
@@ -1654,6 +1661,9 @@ header.header-bg {
               text-align: left;
               line-height: 15px;
             }
+            h4 {
+              text-align: left;
+            }
             &.app-store {
               background-color: $background-color_7;
             }
@@ -1697,6 +1707,7 @@ header.header-bg {
               .info-content {
                 h4 {
                   color: $color_5;
+                  text-align: left;
                 }
                 a {
                   color: $color_12;
@@ -2014,6 +2025,16 @@ footer {
 }
 
 .phone-nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $background-color_4;
+  z-index: 99;
+  top: -100%;
+  transition: 0.5s cubic-bezier(0.38, 0.32, 0.65, 1.04);
   .stores-icons {
     display: flex;
     justify-content: space-between;
@@ -2067,16 +2088,7 @@ footer {
       }
     }
   }
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: $background-color_4;
-  z-index: 99;
-  top: -100%;
-  transition: 0.5s cubic-bezier(0.38, 0.32, 0.65, 1.04);
+
   .close-ico {
     margin: 15px 0 0 15px;
     i {

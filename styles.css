@@ -383,6 +383,14 @@ header.header-bg .logo img {
   width: 100%;
   padding: 15px 0;
 }
+.land .container .content .booking-box .booking-control .booking-info .trip-control .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-around;
+}
 .land .container .content .booking-box .booking-control .booking-info .trip-control .control {
   display: flex;
   flex-direction: column;
@@ -428,6 +436,7 @@ header.header-bg .logo img {
   box-shadow: 0 0 2px 1px #51534e;
 }
 .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class {
+  border-left: 0;
   color: rgb(206, 206, 206);
   cursor: pointer;
 }
@@ -453,9 +462,6 @@ header.header-bg .logo img {
 }
 .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow {
   display: none;
-}
-.land .container .content .booking-box .booking-control .booking-info .trip-control .start-date {
-  border-left: 0;
 }
 .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
   background: transparent;
@@ -790,6 +796,7 @@ header.header-bg .logo img {
 .offers-section .container .content .heading span {
   font-weight: 300;
   font-family: "Noto Nastaliq Urdu", serif;
+  color: #fd8f1c;
 }
 .offers-section .container .content .deals {
   display: flex;
@@ -1531,7 +1538,7 @@ header.header-bg .logo img {
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2549019608);
-  width: 35%;
+  width: 350px;
 }
 .blog-main .container .main-content .trip-search .input-box {
   display: flex;
@@ -1790,6 +1797,9 @@ header.header-bg .logo img {
   text-align: left;
   line-height: 15px;
 }
+.blog-posts .container .posts-content .rihla-info .mobile-app .store h4 {
+  text-align: left;
+}
 .blog-posts .container .posts-content .rihla-info .mobile-app .store.app-store {
   background-color: #000;
 }
@@ -1831,6 +1841,7 @@ header.header-bg .logo img {
 }
 .blog-posts .container .posts-content .rihla-info .booking-info .infos .info .info-content h4 {
   color: #fd8f1c;
+  text-align: left;
 }
 .blog-posts .container .posts-content .rihla-info .booking-info .infos .info .info-content a {
   color: #081d4e;
@@ -2155,7 +2166,7 @@ footer .copyright-section p:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(8, 7, 7);
+  background-color: rgb(216, 216, 216);
   z-index: 99;
   top: -100%;
   transition: 0.5s cubic-bezier(0.38, 0.32, 0.65, 1.04);
@@ -2280,6 +2291,96 @@ footer .copyright-section p:nth-child(2) {
 }
 
 @media (max-width: 1470px) {
+  .land {
+    height: 90vh;
+    align-items: center;
+  }
+  .land .container .content .heading {
+    margin-bottom: 80px;
+  }
+  .land .container .content .heading p {
+    font-size: 23px;
+  }
+  .land .container .content .heading h2 {
+    width: 50%;
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .land .container .content .heading .paragraph {
+    font-size: 23px;
+    width: 60%;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li {
+    padding: 15px 100px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control {
+    flex-wrap: wrap;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field {
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field input {
+    font-size: 15px;
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field i {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .label {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .select {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
+    width: 60px;
+    height: 60px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton i {
+    font-size: 20px;
+  }
+  .experience-section .container {
+    padding: 50px 0px 80px;
+  }
+  .experience-section .container .content .heading h3 {
+    font-size: 40px;
+  }
+  .experience-section .container .content .heading p {
+    font-size: 16px;
+  }
+  .experience-section .container .content .experience-grid .image {
+    width: 400px;
+    height: 470px;
+  }
+  .experience-section .container .content .experience-grid .boxes {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .row {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .experience-box {
+    width: 250px;
+    height: 220px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h4 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h5 {
+    font-size: 23px;
+  }
   .activities-cards {
     grid-template-columns: repeat(3, 1fr);
     padding: 2em 5%;
@@ -2296,6 +2397,338 @@ footer .copyright-section p:nth-child(2) {
   }
   .trips-recommendation .container .right {
     right: -55px;
+  }
+}
+@media (max-width: 1215px) {
+  .land {
+    height: 90vh;
+    align-items: center;
+  }
+  .land .container .content .heading {
+    margin-bottom: 80px;
+  }
+  .land .container .content .heading p {
+    font-size: 23px;
+  }
+  .land .container .content .heading h2 {
+    width: 50%;
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .land .container .content .heading .paragraph {
+    font-size: 23px;
+    width: 60%;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li {
+    padding: 15px 50px;
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li i {
+    font-size: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__custom {
+    width: 20px;
+    height: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control {
+    flex-wrap: wrap;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field {
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field input {
+    font-size: 15px;
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field i {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .label {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .select {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date {
+    border-left: 0;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
+    width: 60px;
+    height: 60px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton i {
+    font-size: 20px;
+  }
+  .blog-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-posts .container .posts-content .posts .post {
+    width: 650px;
+  }
+  .blog-posts .container .posts-content .posts .post .heading {
+    font-size: 28px;
+    color: #081d4e;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card {
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 12px 3px rgba(27, 27, 27, 0.0901960784);
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-image {
+    position: relative;
+    width: 100%;
+    height: 430px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption {
+    padding: 20px 25px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .title {
+    font-size: 25px;
+    color: #081d4e;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .description {
+    color: #9fa2a0;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .links button {
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    background-color: #fa9900;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .links .social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .links .social ul li i {
+    font-size: 20px;
+    color: #9fa2a0;
+    cursor: pointer;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .links .social ul li i:hover {
+    color: #4d4d4d;
+  }
+  .blog-posts .container .posts-content .rihla-info {
+    position: relative;
+    top: 0;
+    margin-top: 7%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 25px 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 3px rgba(27, 27, 27, 0.0901960784);
+  }
+  .blog-posts .container .posts-content .rihla-info .about-rihla h3 {
+    position: relative;
+    font-size: 20px;
+    color: #002fa4;
+    margin-bottom: 5px;
+  }
+  .blog-posts .container .posts-content .rihla-info .about-rihla h3 span {
+    color: #fd8f1c;
+    font-weight: 400;
+  }
+  .blog-posts .container .posts-content .rihla-info .about-rihla h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background-color: #fa9900;
+  }
+  .blog-posts .container .posts-content .rihla-info .about-rihla p {
+    line-height: 23px;
+    color: #4d4d4d;
+  }
+  .blog-posts .container .posts-content .rihla-info .about-rihla a {
+    color: #3e6be8;
+    text-decoration: underline;
+  }
+  .blog-posts .container .posts-content .rihla-info .newsletter h3 {
+    text-align: center;
+    padding: 0 15px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .newsletter input {
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid rgba(207, 207, 207, 0.7803921569);
+    margin-bottom: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .newsletter button {
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    background-color: #fa9900;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 15px;
+    cursor: pointer;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store i {
+    font-size: 30px;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store p {
+    text-align: left;
+    line-height: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store h4 {
+    text-align: left;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store.app-store {
+    background-color: #000;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store.google-play {
+    background-color: #fa9900;
+  }
+  .blog-posts .container .posts-content .rihla-info .customer-reviews h3 {
+    color: #51534e;
+    font-size: 22px;
+  }
+  .blog-posts .container .posts-content .rihla-info .customer-reviews .stars i {
+    color: #fd8f1c;
+    font-size: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .customer-reviews h4 {
+    color: #081d4e;
+    font-size: 20px;
+    font-style: italic;
+  }
+  .blog-posts .container .posts-content .rihla-info .customer-reviews p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #51534e;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .infos {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .infos .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .infos .info .icon i {
+    color: #fd8f1c;
+    font-size: 20px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .infos .info .info-content h4 {
+    color: #fd8f1c;
+    text-align: left;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .infos .info .info-content a {
+    color: #081d4e;
+    font-weight: 700;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    align-items: start;
+    flex-direction: row-reverse;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .icon i {
+    color: #fd8f1c;
+    font-size: 27px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .feature-content h4,
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .feature-content p {
+    text-align: right;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .feature-content h4 {
+    font-size: 17px;
+    color: #51534e;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .feature-content p {
+    color: #474747;
+    line-height: 25px;
   }
 }
 @media (max-width: 1045px) {
@@ -2319,6 +2752,218 @@ footer .copyright-section p:nth-child(2) {
   }
   header .logo img {
     width: 5em;
+  }
+  .land {
+    height: 90vh;
+    align-items: center;
+  }
+  .land .container .content .heading {
+    margin-bottom: 80px;
+  }
+  .land .container .content .heading p {
+    font-size: 23px;
+  }
+  .land .container .content .heading h2 {
+    width: 50%;
+    font-size: 70px;
+    line-height: 80px;
+    width: 80%;
+  }
+  .land .container .content .heading .paragraph {
+    font-size: 23px;
+    width: 60%;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li {
+    padding: 15px 50px;
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li i {
+    font-size: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__custom {
+    width: 20px;
+    height: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control {
+    flex-wrap: wrap;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .control {
+    padding: 15px 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field {
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field input {
+    font-size: 15px;
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field i {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .label {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .select {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+    font-size: 15px;
+    width: 120px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
+    width: 60px;
+    height: 60px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton i {
+    font-size: 20px;
+  }
+  .packages-section {
+    padding: 250px 2% 100px;
+  }
+  .packages-section .container .content {
+    gap: 5%;
+  }
+  .packages-section .container .content .heading {
+    margin-bottom: 15px;
+  }
+  .packages-section .container .content .heading h3 {
+    font-size: 35px;
+  }
+  .packages-section .container .content .heading p {
+    font-size: 15px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars h4 {
+    font-size: 18px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars p {
+    font-size: 15px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars p i {
+    font-size: 15px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars .stars {
+    font-size: 22px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars .stars i {
+    font-size: 18px;
+  }
+  .packages-section .container .content .packages .package .package-info .package-description {
+    font-size: 13px;
+    width: 95%;
+  }
+  .packages-section .container .content .packages .package .package-info .package-cost .cost {
+    font-size: 22px;
+  }
+  .packages-section .container .content .packages .package .package-info .package-cost .booking {
+    padding: 5px 30px;
+    font-size: 15px;
+  }
+  .experience-section .container {
+    padding: 50px 0px 80px;
+  }
+  .experience-section .container .content .heading h3 {
+    font-size: 35px;
+  }
+  .experience-section .container .content .heading p {
+    font-size: 15px;
+  }
+  .experience-section .container .content .experience-grid .image {
+    width: 350px;
+    height: 410px;
+  }
+  .experience-section .container .content .experience-grid .boxes {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .row {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .experience-box {
+    width: 220px;
+    height: 190px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h4 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h5 {
+    font-size: 20px;
+  }
+  .experience-section .container .content .experience-grid .experience-box p {
+    font-size: 13px;
+  }
+  .offers-section .container {
+    padding: 50px 0px;
+  }
+  .offers-section .container .content .heading {
+    text-align: center;
+    line-height: 40px;
+    font-size: 37px;
+  }
+  .offers-section .container .content .deals {
+    flex-wrap: wrap;
+  }
+  .offers-section .container .content .deals .deal {
+    width: calc(50% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 30px;
+  }
+  .offers-section .container .content .deals .deal .title {
+    font-size: 20px;
+  }
+  .offers-section .container .content .deals .deal .title i {
+    font-size: 26px;
+  }
+  .offers-section .container .content .deals .deal p {
+    width: 70%;
+  }
+  .newsletter-section .container {
+    padding: 50px 0px;
+  }
+  .newsletter-section .container .content .heading {
+    width: 50%;
+  }
+  .newsletter-section .container .content .heading h3 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .newsletter-section .container .content .heading h4 {
+    font-size: 30px;
+    width: 70%;
+    line-height: 40px;
+  }
+  .newsletter-section .container .content .heading p {
+    font-size: 18px;
+    text-align: right;
+  }
+  .newsletter-section .container .content .newsletter-form {
+    width: 50%;
+  }
+  .newsletter-section .container .content .newsletter-form h4 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .newsletter-section .container .content .newsletter-form .input-group .input {
+    width: 100%;
+  }
+  .popular-destinations .container .content .heading h3 {
+    font-size: 35px;
+  }
+  .popular-destinations .container .content .heading p {
+    font-size: 15px;
   }
   .activities-cards {
     padding: 2em 0%;
@@ -2353,6 +2998,156 @@ footer .copyright-section p:nth-child(2) {
   }
 }
 @media (max-width: 923px) {
+  .land {
+    height: 90vh;
+    align-items: center;
+  }
+  .land .container .content .heading {
+    margin-bottom: 80px;
+  }
+  .land .container .content .heading p {
+    font-size: 23px;
+  }
+  .land .container .content .heading h2 {
+    width: 50%;
+    font-size: 65px;
+    line-height: 80px;
+    width: 99%;
+  }
+  .land .container .content .heading .paragraph {
+    font-size: 23px;
+    width: 60%;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li {
+    padding: 15px 50px;
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li i {
+    font-size: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__custom {
+    width: 20px;
+    height: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control {
+    flex-wrap: wrap;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field {
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field input {
+    font-size: 15px;
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field i {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .label {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .select {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
+    width: 60px;
+    height: 60px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton i {
+    font-size: 20px;
+  }
+  .packages-section {
+    padding: 250px 2% 100px;
+  }
+  .packages-section .container .content {
+    gap: 2%;
+  }
+  .packages-section .container .content .packages {
+    flex-wrap: wrap;
+  }
+  .packages-section .container .content .packages .package {
+    width: 350px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars h4 {
+    font-size: 23px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars p {
+    font-size: 18px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars p i {
+    font-size: 15px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars .stars {
+    font-size: 25px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars .stars i {
+    font-size: 20px;
+  }
+  .packages-section .container .content .packages .package .package-info .package-description {
+    font-size: 13px;
+    width: 95%;
+  }
+  .packages-section .container .content .packages .package .package-info .package-cost .cost {
+    font-size: 22px;
+  }
+  .packages-section .container .content .packages .package .package-info .package-cost .booking {
+    padding: 5px 30px;
+    font-size: 15px;
+  }
+  .experience-section .container {
+    padding: 50px 0px 80px;
+  }
+  .experience-section .container .content .heading h3 {
+    font-size: 35px;
+  }
+  .experience-section .container .content .heading p {
+    font-size: 15px;
+  }
+  .experience-section .container .content .experience-grid .image {
+    width: 350px;
+    height: 410px;
+  }
+  .experience-section .container .content .experience-grid .boxes {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .row {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .experience-box {
+    width: 220px;
+    height: 190px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h4 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h5 {
+    font-size: 20px;
+  }
+  .experience-section .container .content .experience-grid .experience-box p {
+    font-size: 13px;
+  }
+  .sponsors .container .content {
+    flex-wrap: wrap;
+  }
+  .sponsors .container .content .sponsor-company {
+    width: 12em;
+    height: 10em;
+  }
   .main .heading h2 {
     font-size: 45px;
   }
@@ -2400,6 +3195,70 @@ footer .copyright-section p:nth-child(2) {
     height: 100%;
   }
 }
+@media (max-width: 860px) {
+  .experience-section .container {
+    padding: 50px 0px 80px;
+  }
+  .experience-section .container .content .experience-grid {
+    flex-direction: column;
+  }
+  .experience-section .container .content .experience-grid .image {
+    width: 100%;
+    height: 310px;
+  }
+  .experience-section .container .content .experience-grid .boxes {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .row {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .experience-box {
+    width: 300px;
+    height: 280px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h4 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h5 {
+    font-size: 23px;
+  }
+  .experience-section .container .content .experience-grid .experience-box p {
+    font-size: 17px;
+  }
+  .popular-destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popular-destinations .container .content .destinations .row .destination .title h3 {
+    font-size: 40px;
+    line-height: 65px;
+  }
+  .popular-destinations .container .content .destinations .row .destination .title h4 {
+    font-size: 30px;
+  }
+  .popular-destinations .container .content .destinations .row.first .destination {
+    height: 350px;
+  }
+  .popular-destinations .container .content .destinations .row.first .destination:first-child {
+    width: calc(66.67% - 10px);
+  }
+  .popular-destinations .container .content .destinations .row.first .destination:nth-child(2) {
+    width: calc(33.33% - 15px);
+  }
+  .popular-destinations .container .content .destinations .row.second .destination {
+    height: 200px;
+    width: calc(33.3333333333% - 15px);
+  }
+  .popular-destinations .container .content .destinations .row.second .destination .title h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .popular-destinations .container .content .destinations .row.second .destination .title h4 {
+    font-size: 30px;
+  }
+}
 @media (max-width: 800px) {
   header nav {
     width: 100%;
@@ -2433,8 +3292,165 @@ footer .copyright-section p:nth-child(2) {
   .phone-nav .logo img {
     width: 40%;
   }
+  .land {
+    height: 90vh;
+    align-items: center;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li {
+    padding: 15px 0px;
+    width: 150px;
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li i {
+    font-size: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__custom {
+    width: 20px;
+    height: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control {
+    flex-wrap: wrap;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field {
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field input {
+    font-size: 15px;
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field i {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .label {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .select {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
+    width: 60px;
+    height: 60px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton i {
+    font-size: 20px;
+  }
 }
-@media (max-width: 723px) {
+@media (max-width: 740px) {
+  .experience-section .container {
+    padding: 50px 0px 80px;
+  }
+  .experience-section .container .content .experience-grid {
+    flex-direction: column;
+  }
+  .experience-section .container .content .experience-grid .image {
+    width: 100%;
+    height: 310px;
+  }
+  .experience-section .container .content .experience-grid .boxes {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .row {
+    gap: 30px;
+  }
+  .experience-section .container .content .experience-grid .experience-box {
+    width: 230px;
+    height: 200px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h5 {
+    font-size: 20px;
+  }
+  .experience-section .container .content .experience-grid .experience-box p {
+    font-size: 13px;
+  }
+  .packages-section {
+    padding: 250px 2% 100px;
+  }
+  .packages-section .container .content {
+    gap: 2%;
+  }
+  .packages-section .container .content .packages {
+    flex-wrap: wrap;
+  }
+  .packages-section .container .content .packages .package {
+    width: 300px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars h4 {
+    font-size: 20px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars p {
+    font-size: 15px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars p i {
+    font-size: 15px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars .stars {
+    font-size: 25px;
+  }
+  .packages-section .container .content .packages .package .package-info .title-stars .stars i {
+    font-size: 20px;
+  }
+  .packages-section .container .content .packages .package .package-info .package-description {
+    font-size: 13px;
+    width: 95%;
+  }
+  .packages-section .container .content .packages .package .package-info .package-cost .cost {
+    font-size: 22px;
+  }
+  .packages-section .container .content .packages .package .package-info .package-cost .booking {
+    padding: 5px 30px;
+    font-size: 15px;
+  }
+  .newsletter-section .container .content {
+    flex-direction: column;
+  }
+  .newsletter-section .container .content .heading {
+    width: 100%;
+  }
+  .newsletter-section .container .content .heading h3 {
+    font-size: 35px;
+  }
+  .newsletter-section .container .content .heading h4 {
+    font-size: 25px;
+    width: 100%;
+    line-height: 40px;
+  }
+  .newsletter-section .container .content .heading p {
+    font-size: 18px;
+    text-align: right;
+  }
+  .newsletter-section .container .content .newsletter-form {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .newsletter-section .container .content .newsletter-form h4 {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .newsletter-section .container .content .newsletter-form .input-group .input {
+    width: 100%;
+  }
   #posts .container .carousel {
     grid-auto-columns: 100%;
   }
@@ -2496,7 +3512,276 @@ footer .copyright-section p:nth-child(2) {
     padding-bottom: 4em;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 700px) {
+  .land {
+    height: 90vh;
+    align-items: center;
+  }
+  .land .container .content .booking-box .booking-control {
+    width: 90%;
+    padding: 20px 10px;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li {
+    padding: 10px 0px;
+    width: 150px;
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li i {
+    font-size: 17px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options {
+    gap: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__label {
+    font-size: 18px;
+    padding-right: 30px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__custom {
+    width: 20px;
+    height: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .control {
+    padding: 15px 8px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .row {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
+    font-size: 16px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field {
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field input {
+    font-size: 13px;
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field i {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class {
+    width: 30%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .label {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .select {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
+    width: 60px;
+    height: 60px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .land {
+    height: 90vh;
+    align-items: center;
+  }
+  .land .container .content .heading {
+    margin-bottom: 80px;
+  }
+  .land .container .content .heading p {
+    font-size: 23px;
+  }
+  .land .container .content .heading h2 {
+    width: 50%;
+    font-size: 35px;
+    line-height: 35px;
+    width: 99%;
+  }
+  .land .container .content .heading .paragraph {
+    font-size: 16px;
+    width: 90%;
+  }
+  .land .container .content .booking-box .booking-control {
+    width: 90%;
+    padding: 20px 10px;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li {
+    padding: 10px 0px;
+    width: 150px;
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-options ul li i {
+    font-size: 17px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options {
+    gap: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__label {
+    font-size: 13px;
+    padding-right: 20px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-options .trip-option .trip-option__custom {
+    width: 15px;
+    height: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .control {
+    padding: 15px 8px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
+    font-size: 16px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field {
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field input {
+    font-size: 13px;
+    width: 100%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field i {
+    font-size: 15px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class {
+    width: 60%;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .label {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .select {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
+    font-size: 13px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+    font-size: 18px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+    font-size: 15px;
+    width: 100px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
+    width: 60px;
+    height: 60px;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton i {
+    font-size: 20px;
+  }
+  .experience-section .container .content .experience-grid .image {
+    width: 100%;
+    height: 200px;
+  }
+  .experience-section .container .content .experience-grid .boxes {
+    gap: 15px;
+  }
+  .experience-section .container .content .experience-grid .row {
+    gap: 15px;
+  }
+  .experience-section .container .content .experience-grid .experience-box {
+    width: 160px;
+    height: 140px;
+    padding: 15px 5px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h4 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .experience-section .container .content .experience-grid .experience-box h5 {
+    font-size: 16px;
+  }
+  .experience-section .container .content .experience-grid .experience-box p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .offers-section .container {
+    padding: 50px 0px;
+  }
+  .offers-section .container .content .heading {
+    text-align: center;
+    line-height: 40px;
+    font-size: 32px;
+  }
+  .offers-section .container .content .deals {
+    flex-wrap: wrap;
+  }
+  .offers-section .container .content .deals .deal {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 30px;
+  }
+  .offers-section .container .content .deals .deal .title {
+    font-size: 20px;
+  }
+  .offers-section .container .content .deals .deal .title i {
+    font-size: 26px;
+  }
+  .offers-section .container .content .deals .deal p {
+    width: 70%;
+  }
+  .popular-destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popular-destinations .container {
+    padding: 50px 10px 80px;
+  }
+  .popular-destinations .container .content .destinations .row .destination .title h3 {
+    font-size: 40px;
+    line-height: 65px;
+  }
+  .popular-destinations .container .content .destinations .row .destination .title h4 {
+    font-size: 30px;
+  }
+  .popular-destinations .container .content .destinations .row.first {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .popular-destinations .container .content .destinations .row.first .destination {
+    height: 200px;
+  }
+  .popular-destinations .container .content .destinations .row.first .destination:first-child {
+    width: 100%;
+    background-position: center -20px;
+  }
+  .popular-destinations .container .content .destinations .row.first .destination:nth-child(2) {
+    width: 100%;
+    background-position: -50px -200px;
+  }
+  .popular-destinations .container .content .destinations .row.second .destination {
+    height: 150px;
+    width: calc(33.3333333333% - 10px);
+  }
+  .popular-destinations .container .content .destinations .row.second .destination .title h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .popular-destinations .container .content .destinations .row.second .destination .title h4 {
+    font-size: 20px;
+  }
+  .sponsors .container .content {
+    flex-wrap: wrap;
+  }
+  .sponsors .container .content .sponsor-company {
+    width: 7em;
+    height: 5em;
+  }
   .main .heading h2 {
     font-size: 25px;
   }

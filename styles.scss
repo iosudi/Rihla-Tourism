@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap");
 /* JS Elements */
 
-
 header {
   display: flex;
   justify-content: center;
@@ -24,7 +23,7 @@ nav {
   gap: 1em;
   .logo {
     img {
-      width: 7em;
+      width: 6em;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -279,7 +278,7 @@ header.header-bg {
                 @include flex-center;
                 flex-direction: row-reverse;
                 width: 100%;
-                justify-content: space-around
+                justify-content: space-around;
               }
               .control {
                 @include flex-col-center;
@@ -962,7 +961,7 @@ header.header-bg {
 
 .activities {
   padding: 5% 5em;
- @include flex-center;
+  @include flex-center;
   .container {
     display: flex;
     flex-direction: column;
@@ -1906,141 +1905,130 @@ header.header-bg {
 }
 
 // about
-.about{
-background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('./imgs/blog-background.jpg');
-background-position: center center;
-background-size: cover;
-h2{
-  font-size: 56px;
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./imgs/blog-background.jpg");
+  background-position: center center;
+  background-size: cover;
+  h2 {
+    font-size: 56px;
+  }
+  .company {
+    color: $color_5;
+    font-size: 25px !important;
+    font-family: $font-family_2;
+  }
 }
-}
 
-
-.story{
-
-    h3{
-      position: relative;
-      text-align: center;
-      font-size: 32px;
-      color: $color_4;
-      padding-bottom: 10px;
-      margin-bottom: 10px;
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 50px;
-        height: 4px;
-        border-radius: 1px;
-        background: #fd8f1c;
-        left: 50%;
-        transform: translateX(-50%);
+.story {
+  h3 {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    color: $color_4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 50px;
+      height: 4px;
+      border-radius: 1px;
+      background: #fd8f1c;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
-  .story-content{
-    span{
-
-color:$color_13;
-font-weight: 400;
+  .story-content {
+    span {
+      color: $color_13;
+      font-weight: 400;
     }
   }
-   h6 {
-       font-size: 13px;
-       margin-bottom: 0.1rem;
+  h6 {
+    font-size: 13px;
+    margin-bottom: 0.1rem;
   }
-   span ,& p{
-      color: #748182;
-      font-size: 15px;
+  span,
+  & p {
+    color: #748182;
+    font-size: 15px;
   }
-   p{
-      line-height: 24px;
+  p {
+    line-height: 27px;
+    font-size: 18px;
   }
   .my-3 {
-      margin-top: 2rem!important;
-      margin-bottom: 2rem!important;
-    }
-    .about-img{
-        position: relative;
-        img{
-          object-fit: cover;
-          height: 100%;
-        }
-    }
-  
-
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
   }
-  
+  .about-img {
+    position: relative;
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
 /* ^ -------- start counter--------- */
-.counter {
-  background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , 
+.counter-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./imgs/offers-bg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-h3{
-  color: $color_5;
-  line-height: 35px;
-}
-p{
-  font-size: 15px;
-}
+  h3 {
+    color: $color_5;
+    line-height: 35px;
+  }
+  p {
+    font-size: 15px;
+  }
 }
 /* ^ -------- Start Services --------- */
-.Services  {
-    background-color: $sections-bg;
-    h3{
-      position: relative;
-      text-align: center;
-      font-size: 32px;
-      color: $color_4;
-      padding-bottom: 10px;
-      margin-bottom: 10px;
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 50px;
-        height: 4px;
-        border-radius: 1px;
-        background: #fd8f1c;
-        left: 50%;
-        transform: translateX(-50%);
+.Services {
+  background-color: $sections-bg;
+  h3 {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    color: $color_4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 50px;
+      height: 4px;
+      border-radius: 1px;
+      background: #fd8f1c;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    span {
+      font-weight: 500;
+      color: $color_5;
     }
   }
-    h6{ 
-      color: $color_12;
-    }
-     p{
-        color: #748182;
-        font-size: 14px;
-       text-align: right !important;
-    }
+  h6 {
+    color: $color_12;
+  }
+  p {
+    color: #748182;
+    font-size: 14px;
+    text-align: right !important;
+  }
 
- i{
-    width: 40px !important;
-    height: 40px !important;
-    border-radius: 100vh;
-    color: $color_5
-  
-}
-
-   
+  i {
+    font-size: 35px;
+    width: 60px;
+    color: $color_5;
+  }
 }
 /* ^ -------- End Services --------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
   padding: 4em 4em 1em;

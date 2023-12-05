@@ -49,6 +49,10 @@ i {
   transition: 0.5s;
 }
 
+ul {
+  margin-bottom: 0 !important;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -129,7 +133,7 @@ nav {
   gap: 1em;
 }
 nav .logo img {
-  width: 7em;
+  width: 6em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2060,6 +2064,11 @@ header.header-bg .logo img {
 .about h2 {
   font-size: 56px;
 }
+.about .company {
+  color: #fd8f1c;
+  font-size: 25px !important;
+  font-family: "Noto Nastaliq Urdu", serif;
+}
 
 .story h3 {
   position: relative;
@@ -2093,7 +2102,8 @@ header.header-bg .logo img {
   font-size: 15px;
 }
 .story p {
-  line-height: 24px;
+  line-height: 27px;
+  font-size: 18px;
 }
 .story .my-3 {
   margin-top: 2rem !important;
@@ -2109,17 +2119,17 @@ header.header-bg .logo img {
 }
 
 /* ^ -------- start counter--------- */
-.counter {
+.counter-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./imgs/offers-bg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-.counter h3 {
+.counter-section h3 {
   color: #fd8f1c;
   line-height: 35px;
 }
-.counter p {
+.counter-section p {
   font-size: 15px;
 }
 
@@ -2146,6 +2156,10 @@ header.header-bg .logo img {
   left: 50%;
   transform: translateX(-50%);
 }
+.Services h3 span {
+  font-weight: 500;
+  color: #fd8f1c;
+}
 .Services h6 {
   color: #081d4e;
 }
@@ -2155,9 +2169,8 @@ header.header-bg .logo img {
   text-align: right !important;
 }
 .Services i {
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 100vh;
+  font-size: 35px;
+  width: 60px;
   color: #fd8f1c;
 }
 

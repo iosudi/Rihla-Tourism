@@ -2052,6 +2052,116 @@ header.header-bg .logo img {
   width: 100%;
 }
 
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/blog-background.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.about h2 {
+  font-size: 56px;
+}
+
+.story h3 {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  color: #002fa4;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.story h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 4px;
+  border-radius: 1px;
+  background: #fd8f1c;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.story .story-content span {
+  color: #9fa2a0;
+  font-weight: 400;
+}
+.story h6 {
+  font-size: 13px;
+  margin-bottom: 0.1rem;
+}
+.story span, .story p {
+  color: #748182;
+  font-size: 15px;
+}
+.story p {
+  line-height: 24px;
+}
+.story .my-3 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+.story .about-img {
+  position: relative;
+}
+.story .about-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+/* ^ -------- start counter--------- */
+.counter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./imgs/offers-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.counter h3 {
+  color: #fd8f1c;
+  line-height: 35px;
+}
+.counter p {
+  font-size: 15px;
+}
+
+/* ^ -------- Start Services --------- */
+.Services {
+  background-color: #eef5ff;
+}
+.Services h3 {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  color: #002fa4;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.Services h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 4px;
+  border-radius: 1px;
+  background: #fd8f1c;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Services h6 {
+  color: #081d4e;
+}
+.Services p {
+  color: #748182;
+  font-size: 14px;
+  text-align: right !important;
+}
+.Services i {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 100vh;
+  color: #fd8f1c;
+}
+
+/* ^ -------- End Services --------- */
 footer {
   padding: 4em 4em 1em;
   background: #05203c;

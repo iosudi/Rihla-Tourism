@@ -107,3 +107,11 @@ ul {
     background: linear-gradient(to left, rgba(255, 255, 255, 0), #0b3e914f);
   }
 }
+
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: 0;
+  border-radius: 6px 0 0 6px !important;
+}

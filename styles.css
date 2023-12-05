@@ -113,6 +113,11 @@ ul {
   background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(11, 62, 145, 0.3098039216));
 }
 
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: 0;
+  border-radius: 6px 0 0 6px !important;
+}
+
 /* JS Elements */
 header {
   display: flex;
@@ -3572,7 +3577,7 @@ footer .copyright-section p:nth-child(2) {
     width: fit-content;
   }
   .newsletter-section .container .content .newsletter-form .input-group .input {
-    width: 100%;
+    width: 70%;
   }
   #posts .container .carousel {
     grid-auto-columns: 100%;

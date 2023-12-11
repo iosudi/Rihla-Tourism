@@ -268,6 +268,7 @@ header.header-bg .logo img {
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 50%);
+  z-index: 5;
 }
 .land .container .content .booking-box .booking-control {
   position: relative;
@@ -392,6 +393,63 @@ header.header-bg .logo img {
   width: 100%;
   padding: 15px 0;
 }
+.land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity {
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 250px;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity .data-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity .row {
+  position: relative;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity .row .row-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity #removeNextToLastRow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #05203c;
+  outline: none;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity .addRowButton {
+  padding: 5px 15px;
+  background-color: #0b3e91;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 15px 0;
+  transition: 0.2s;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity .addRowButton:active {
+  transform: scale(0.95);
+}
 .land .container .content .booking-box .booking-control .booking-info .trip-control .row {
   display: flex;
   justify-content: center;
@@ -445,6 +503,7 @@ header.header-bg .logo img {
   box-shadow: 0 0 2px 1px #51534e;
 }
 .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class {
+  position: relative;
   border-left: 0;
   color: rgb(206, 206, 206);
   cursor: pointer;
@@ -470,9 +529,84 @@ header.header-bg .logo img {
   color: #081d4e;
 }
 .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow {
-  display: none;
+  position: absolute;
+  top: 100%;
+  right: -40%;
+  background-color: #eef5ff;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 0;
+  pointer-events: none;
+  transition: height 0.5s;
 }
-.land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow .select-container {
+  padding: 15px 5%;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow select {
+  width: 50%;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-right: 10px;
+  outline: 0;
+  cursor: pointer;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow .fieldSet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow .fieldSet label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow .fieldSet .ageRange {
+  color: #9fa2a0;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow .selectClass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow .selectClass .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #9fa2a0;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #002fa4;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow button:hover {
+  background-color: #0b3e91;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow.active {
+  pointer-events: all;
+  height: 280px;
+  font-weight: 500;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input,
+.land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
   background: transparent;
   outline: none;
   border: 0;
@@ -1510,7 +1644,7 @@ header.header-bg .logo img {
 }
 
 .blog-main {
-  background-image: url(imgs/blog-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769938.jpg?w=1380&t=st=1702145024~exp=1702145624~hmac=80408eb528bdf4c0848114862c22180b42b67ecbd18af1bedd718926c0dc3793);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -2065,6 +2199,7 @@ header.header-bg .logo img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/blog-background.jpg");
   background-position: center center;
   background-size: cover;
+  padding: 80px 0;
 }
 .about h2 {
   font-size: 56px;
@@ -2075,6 +2210,9 @@ header.header-bg .logo img {
   font-family: "Noto Nastaliq Urdu", serif;
 }
 
+.story {
+  padding: 4% 0 !important;
+}
 .story h3 {
   position: relative;
   text-align: center;
@@ -3464,10 +3602,10 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
     font-size: 13px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
     font-size: 18px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
     font-size: 15px;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
@@ -3704,10 +3842,10 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
     font-size: 13px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
     font-size: 18px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
     font-size: 15px;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
@@ -3724,7 +3862,7 @@ footer .copyright-section p:nth-child(2) {
     align-items: center;
   }
   .land .container .content .heading {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
   .land .container .content .heading p {
     font-size: 23px;
@@ -3794,10 +3932,10 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
     font-size: 13px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
     font-size: 18px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
     font-size: 15px;
     width: 100px;
   }

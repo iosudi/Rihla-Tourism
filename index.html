@@ -211,7 +211,7 @@
                       <div class="select">
                         <div class="counter">
                           <span class="numberOfTravllers">1</span>
-                          <span>مسافر</span>
+                          <span class="name">مسافر</span>
                         </div>
                         <span class="icon">
                           <i class="fa-solid fa-caret-down"></i>
@@ -219,72 +219,62 @@
                       </div>
                       <div class="class"><span>السياحية</span></div>
                       <div class="selectWindow">
-                        <div class="ages">
-                          <div class="fieldSet">
-                            <label
-                              >بالغين
-                              <select>
-                                <option value="١">١</option>
-                                <option value="٢">٢</option>
-                                <option value="٣">٣</option>
-                                <option value="٤">٤</option>
-                                <option value="٥">٥</option>
-                                <option value="٦">٦</option>
-                                <option value="٧">٧</option>
-                                <option value="٨">٨</option>
-                                <option value="٩">٩</option>
-                              </select></label
-                            >
-                            <div class="ageRange">(سنة +١٢)</div>
-                          </div>
+                        <div class="select-container">
+                          <div class="ages">
+                            <div class="fieldSet">
+                              <label
+                                >بالغين
+                                <select>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                  <option value="4">٤</option>
+                                  <option value="5">٥</option>
+                                  <option value="6">٦</option>
+                                  <option value="7">٧</option>
+                                  <option value="8">٨</option>
+                                  <option value="9">٩</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(١٢ سنة+)</div>
+                            </div>
 
-                          <div class="fieldSet">
-                            <label
-                              >رضيع
+                            <div class="fieldSet">
+                              <label
+                                >أطفال
+                                <select>
+                                  <option value="0">٠</option>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(١٢-٢ سنة)</div>
+                            </div>
+                            <div class="fieldSet">
+                              <label
+                                >رضيع
+                                <select>
+                                  <option value="0">٠</option>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                  <option value="4">٤</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(أقل من سنتين)</div>
+                            </div>
+                          </div>
+                          <div class="selectClass">
+                            <div class="label">
+                              الدرجة
                               <select>
-                                <option value="١">١</option>
-                                <option value="٢">٢</option>
-                                <option value="٣">٣</option>
-                                <option value="٤">٤</option>
-                                <option value="٥">٥</option>
-                                <option value="٦">٦</option>
-                                <option value="٧">٧</option>
-                                <option value="٨">٨</option>
-                                <option value="٩">٩</option>
-                              </select></label
-                            >
-                            <div class="ageRange">(أقل من سنتين)</div>
+                                <option value="السياحية">السياحية</option>
+                                <option value="رجال أعمال">رجال أعمال</option>
+                                <option value="الأولي">الأولي</option>
+                              </select>
+                            </div>
                           </div>
-
-                          <div class="fieldSet">
-                            <label
-                              >أطفال
-                              <select>
-                                <option value="١">١</option>
-                                <option value="٢">٢</option>
-                                <option value="٣">٣</option>
-                                <option value="٤">٤</option>
-                                <option value="٥">٥</option>
-                                <option value="٦">٦</option>
-                                <option value="٧">٧</option>
-                                <option value="٨">٨</option>
-                                <option value="٩">٩</option>
-                              </select></label
-                            >
-                            <div class="ageRange">(سنة ١٢-٢)</div>
-                          </div>
-                        </div>
-                        <div class="selectClass">
-                          <div class="label">
-                            الدرجة
-                            <select>
-                              <option value="السياحية">السياحية</option>
-                              <option value="رجال أعمال">رجال أعمال</option>
-                              <option value="الأولي">الأولي</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="confirmButton">
                           <button>
                             موافق
                             <span
@@ -294,6 +284,241 @@
                         </div>
                       </div>
                     </div>
+                    <button class="searchButton">
+                      <i class="bx bx-search"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="trip-control option-roundtrip">
+                  <div class="row">
+                    <div class="from control from-to">
+                      <div class="input-box">
+                        <label>الوجهة</label>
+                        <div class="input-field">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <input type="text" placeholder="المدينة أو المطار" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="to control from-to">
+                      <div class="input-box">
+                        <label>المغادرة من</label>
+                        <div class="input-field">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <input type="text" placeholder="المدينة أو المطار" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="start-date control">
+                      <label>تاريخ الرحلة</label>
+                      <input type="date" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="finish-date control">
+                      <label>تاريخ العودة</label>
+                      <input type="date" />
+                    </div>
+                    <div class="traveler-class control">
+                      <div class="label"><p>المسافرين, الدرجه</p></div>
+                      <div class="select">
+                        <div class="counter">
+                          <span class="numberOfTravllers">1</span>
+                          <span class="name">مسافر</span>
+                        </div>
+                        <span class="icon">
+                          <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                      </div>
+                      <div class="class"><span>السياحية</span></div>
+                      <div class="selectWindow">
+                        <div class="select-container">
+                          <div class="ages">
+                            <div class="fieldSet">
+                              <label
+                                >بالغين
+                                <select>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                  <option value="4">٤</option>
+                                  <option value="5">٥</option>
+                                  <option value="6">٦</option>
+                                  <option value="7">٧</option>
+                                  <option value="8">٨</option>
+                                  <option value="9">٩</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(١٢ سنة+)</div>
+                            </div>
+
+                            <div class="fieldSet">
+                              <label
+                                >أطفال
+                                <select>
+                                  <option value="0">٠</option>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(١٢-٢ سنة)</div>
+                            </div>
+                            <div class="fieldSet">
+                              <label
+                                >رضيع
+                                <select>
+                                  <option value="0">٠</option>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                  <option value="4">٤</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(أقل من سنتين)</div>
+                            </div>
+                          </div>
+                          <div class="selectClass">
+                            <div class="label">
+                              الدرجة
+                              <select>
+                                <option value="السياحية">السياحية</option>
+                                <option value="رجال أعمال">رجال أعمال</option>
+                                <option value="الأولي">الأولي</option>
+                              </select>
+                            </div>
+                          </div>
+                          <button>
+                            موافق
+                            <span
+                              ><i class="fa-regular fa-circle-check"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="searchButton">
+                      <i class="bx bx-search"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="trip-control option-multicity">
+                  <div class="data-row">
+                    <div class="row">
+                      <div class="from control from-to">
+                        <div class="input-box">
+                          <label>الوجهة</label>
+                          <div class="input-field">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input
+                              type="text"
+                              placeholder="المدينة أو المطار"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="to control from-to">
+                        <div class="input-box">
+                          <label>المغادرة من</label>
+                          <div class="input-field">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input
+                              type="text"
+                              placeholder="المدينة أو المطار"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="start-date control">
+                        <label>تاريخ الرحلة</label>
+                        <input type="date" />
+                      </div>
+                    </div>
+                  </div>
+                  <button class="addRowButton">
+                    اضافة رحلة <i class="fa-solid fa-plus"></i>
+                  </button>
+                  <div class="row">
+                    <div class="traveler-class control">
+                      <div class="label"><p>المسافرين, الدرجه</p></div>
+                      <div class="select">
+                        <div class="counter">
+                          <span class="numberOfTravllers">1</span>
+                          <span class="name">مسافر</span>
+                        </div>
+                        <span class="icon">
+                          <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                      </div>
+                      <div class="class"><span>السياحية</span></div>
+                      <div class="selectWindow">
+                        <div class="select-container">
+                          <div class="ages">
+                            <div class="fieldSet">
+                              <label
+                                >بالغين
+                                <select>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                  <option value="4">٤</option>
+                                  <option value="5">٥</option>
+                                  <option value="6">٦</option>
+                                  <option value="7">٧</option>
+                                  <option value="8">٨</option>
+                                  <option value="9">٩</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(١٢ سنة+)</div>
+                            </div>
+
+                            <div class="fieldSet">
+                              <label
+                                >أطفال
+                                <select>
+                                  <option value="0">٠</option>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(١٢-٢ سنة)</div>
+                            </div>
+                            <div class="fieldSet">
+                              <label
+                                >رضيع
+                                <select>
+                                  <option value="0">٠</option>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                  <option value="4">٤</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(أقل من سنتين)</div>
+                            </div>
+                          </div>
+                          <div class="selectClass">
+                            <div class="label">
+                              الدرجة
+                              <select>
+                                <option value="السياحية">السياحية</option>
+                                <option value="رجال أعمال">رجال أعمال</option>
+                                <option value="الأولي">الأولي</option>
+                              </select>
+                            </div>
+                          </div>
+                          <button>
+                            موافق
+                            <span
+                              ><i class="fa-regular fa-circle-check"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
                     <button class="searchButton">
                       <i class="bx bx-search"></i>
                     </button>

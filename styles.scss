@@ -157,6 +157,7 @@ header.header-bg {
         left: 50%;
         bottom: 0;
         transform: translate(-50%, 50%);
+        z-index: 5;
 
         .booking-control {
           position: relative;
@@ -274,6 +275,58 @@ header.header-bg {
               border-top: 1px solid $border-color;
               width: 100%;
               padding: 15px 0;
+              &.option-multicity {
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                height: 250px;
+                overflow-y: scroll;
+                overflow-x: visible;
+                .data-row {
+                  width: 100%;
+                  @include flex-col-center;
+                  flex-direction: column-reverse;
+                }
+                .row {
+                  position: relative;
+                  .row-container {
+                    @include flex-center;
+                    width: 100%;
+                    gap: 5%;
+                  }
+                }
+
+                #removeNextToLastRow {
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: 0px;
+                  @include flex-center;
+                  background-color: #05203c;
+                  outline: none;
+                  border: 0;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  cursor: pointer;
+                }
+
+                .addRowButton {
+                  padding: 5px 15px;
+                  background-color: $background-color_3;
+                  color: $color_1;
+                  border: 0;
+                  outline: none;
+                  font-size: 16px;
+                  border-radius: 10px;
+                  cursor: pointer;
+                  margin: 15px 0;
+                  transition: .2s;
+                  &:active {
+                    transform: scale(0.95);
+                  }
+                }
+              }
               .row {
                 @include flex-center;
                 flex-direction: row-reverse;
@@ -322,6 +375,7 @@ header.header-bg {
               }
 
               .traveler-class {
+                position: relative;
                 border-left: 0;
                 color: $border-color;
                 cursor: pointer;
@@ -341,12 +395,81 @@ header.header-bg {
                     color: $color_12;
                   }
                 }
+
                 .selectWindow {
-                  display: none;
+                  position: absolute;
+                  top: 100%;
+                  right: -40%;
+                  background-color: $sections-bg;
+                  width: 300px;
+                  border-radius: 15px;
+                  overflow: hidden;
+                  height: 0;
+                  pointer-events: none;
+                  transition: height 0.5s;
+
+                  .select-container {
+                    padding: 15px 5%;
+                  }
+                  select {
+                    width: 50%;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    padding-right: 10px;
+                    outline: 0;
+                    cursor: pointer;
+                  }
+                  .fieldSet {
+                    @include flex-space-bet;
+                    flex-direction: row-reverse;
+                    z-index: 1;
+                    margin-bottom: 15px;
+                    label {
+                      @include flex-space-bet;
+                      width: 150px;
+                    }
+                    .ageRange {
+                      color: $color_13;
+                    }
+                  }
+                  .selectClass {
+                    @include flex-space-bet;
+                    margin-bottom: 15px;
+                    .label {
+                      @include flex-space-bet;
+                      width: 100%;
+                      color: $color_13;
+                    }
+                  }
+
+                  button {
+                    @include flex-center;
+                    gap: 10px;
+                    background-color: $color_4;
+                    border: 0;
+                    outline: none;
+                    border-radius: 10px;
+                    padding: 5px 15px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: $color_1;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    &:hover {
+                      background-color: $background-color_3;
+                    }
+                  }
+
+                  &.active {
+                    pointer-events: all;
+                    height: 280px;
+                    font-weight: 500;
+                  }
                 }
               }
 
-              .start-date {
+              .start-date,
+              .finish-date {
                 input {
                   background: transparent;
                   outline: none;
@@ -1375,7 +1498,8 @@ header.header-bg {
 // blog page
 
 .blog-main {
-  background-image: url(imgs/blog-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769938.jpg?w=1380&t=st=1702145024~exp=1702145624~hmac=80408eb528bdf4c0848114862c22180b42b67ecbd18af1bedd718926c0dc3793);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -1910,6 +2034,7 @@ header.header-bg {
     url("./imgs/blog-background.jpg");
   background-position: center center;
   background-size: cover;
+  padding: 80px 0;
   h2 {
     font-size: 56px;
   }
@@ -1921,6 +2046,8 @@ header.header-bg {
 }
 
 .story {
+  padding: 4% 0 !important;
+
   h3 {
     position: relative;
     text-align: center;

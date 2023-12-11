@@ -178,40 +178,39 @@ function changeInnerHtml() {
 changeInnerHtml();
 $(window).resize(changeInnerHtml);
 
-// hell
 const rihlaInfo = $(".rihla-info");
 
-const postsContent = $(".posts-content");
+// const postsContent = $(".posts-content");
 
-var rihlaInfoOffsetTop = rihlaInfo.offset().top;
+// var rihlaInfoOffsetTop = rihlaInfo.offset().top;
 
-let rihlaInfoHeight = rihlaInfo.height();
+// let rihlaInfoHeight = rihlaInfo.height();
 
-let postsContentOffsetTop = postsContent.offset().top;
+// let postsContentOffsetTop = postsContent.offset().top;
 
-$(window).scroll(function () {
-  let scrollPosition = $(window).scrollTop();
+// $(window).scroll(function () {
+//   let scrollPosition = $(window).scrollTop();
 
-  let rihlaInfoBottom = rihlaInfoOffsetTop + rihlaInfoHeight;
+//   let rihlaInfoBottom = rihlaInfoOffsetTop + rihlaInfoHeight;
 
-  let postsContentBottom = postsContentOffsetTop + postsContent.height();
+//   let postsContentBottom = postsContentOffsetTop + postsContent.height();
 
-  if (
-    scrollPosition >= rihlaInfoOffsetTop &&
-    scrollPosition < postsContentBottom - rihlaInfoHeight
-  ) {
-    var topValue = scrollPosition - rihlaInfoOffsetTop;
-    rihlaInfo.css({ position: "relative", top: topValue + 70 + "px" });
-  } else if (scrollPosition >= postsContentBottom - rihlaInfoHeight) {
-    rihlaInfo.css({
-      position: "relative",
-      top:
-        postsContentBottom - rihlaInfoHeight - rihlaInfoOffsetTop - 70 + "px",
-    });
-  } else {
-    rihlaInfo.css({ position: "relative", top: "0" });
-  }
-});
+//   if (
+//     scrollPosition >= rihlaInfoOffsetTop &&
+//     scrollPosition < postsContentBottom - rihlaInfoHeight
+//   ) {
+//     var topValue = scrollPosition - rihlaInfoOffsetTop;
+//     rihlaInfo.css({ position: "relative", top: topValue + 70 + "px" });
+//   } else if (scrollPosition >= postsContentBottom - rihlaInfoHeight) {
+//     rihlaInfo.css({
+//       position: "relative",
+//       top:
+//         postsContentBottom - rihlaInfoHeight - rihlaInfoOffsetTop - 70 + "px",
+//     });
+//   } else {
+//     rihlaInfo.css({ position: "relative", top: "0" });
+//   }
+// });
 
 // Carousel cards functionality
 const reviewCarousel = $(".customer-reviews .reviews");
@@ -316,3 +315,223 @@ reviewCarousel.on("mousedown", reviewDragStart);
 reviewCarousel.on("scroll", reviewInfiniteScroll);
 reviewCarousel.on("mouseenter", () => clearTimeout(review_timeoutId));
 reviewCarousel.on("mouseleave", reviewAutoSlide);
+
+// increase numbers animation
+
+// let nums = $(".counter-section .nums");
+// let counterSection = $(".counter-section");
+// let started = false;
+
+// function startCounter(el, start, goal) {
+//   let count = start;
+//   let duration = 2500 / goal;
+//   let counter = setInterval(() => {
+//     $(el).text(++count);
+
+//     if (count == goal) {
+//       clearInterval(counter);
+//     }
+//   }, duration);
+// }
+
+// $(window).scroll(function () {
+//   let windowBottom = $(window).scrollTop() + $(window).height();
+//   let sectionTop = counterSection.offset().top;
+
+//   if (windowBottom >= sectionTop && !started) {
+//     nums.each(function (index, element) {
+//       let start = $(element).data("start") || 0;
+//       let goal = $(element).data("goal");
+//       startCounter(element, start, goal);
+//     });
+
+//     started = true;
+//   }
+// });
+
+// handle class selection
+
+// Function to update values based on traveler selection
+
+// When the element with class 'select' is clicked, toggle the 'active' class for 'selectWindow'
+$(
+  ".land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .select"
+).on("click", function () {
+  $(
+    ".land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow"
+  ).toggleClass("active");
+});
+
+// When the 'موافق' button is clicked, close the selectWindow
+$(".selectWindow button").on("click", function () {
+  $(".selectWindow").removeClass("active");
+});
+
+function updateValues(context) {
+  var sum = 0;
+
+  // Loop through all "fieldSet" select elements in the specified context
+  $("." + context + " .fieldSet select").each(function () {
+    sum += parseInt($(this).val(), 10) || 0; // Parse as integer, default to 0 if NaN
+  });
+
+  // Set the sum in the main select div in the specified context
+  $("." + context + " .counter .numberOfTravllers").text(sum);
+
+  // Update the text based on the sum in the specified context
+  if (sum >= 3 && sum < 10) {
+    $("." + context + " .counter .name").text("مسافرين");
+  } else {
+    $("." + context + " .counter .name").text("مسافر");
+  }
+
+  // Set the value of "classSelect" in the main span in the specified context
+  var classSelectValue = $("." + context + " .selectClass select").val();
+  $("." + context + " .traveler-class .class span").html(classSelectValue);
+}
+
+// Function to show/hide oneWay div
+function showHideOneWay() {
+  $(".option-oneWay").show();
+  $(".option-roundtrip").hide();
+  $(".option-multicity").hide();
+
+  // Call updateValues function for oneWay
+  updateValues("option-oneWay");
+
+  // Remove the "active" class from the select window
+  $(".selectWindow").removeClass("active");
+}
+
+// Function to show/hide roundtrip div
+function showHideRoundTrip() {
+  $(".option-oneWay").hide();
+  $(".option-roundtrip").show();
+  $(".option-multicity").hide();
+
+  // Call updateValues function for roundtrip
+  updateValues("option-roundtrip");
+
+  // Remove the "active" class from the select window
+  $(".selectWindow").removeClass("active");
+}
+function showHideMultiCity() {
+  $(".option-oneWay").hide();
+  $(".option-roundtrip").hide();
+  $(".option-multicity").show();
+
+  // Call updateValues function for roundtrip
+  updateValues("option-roundtrip");
+
+  // Remove the "active" class from the select window
+  $(".selectWindow").removeClass("active");
+}
+
+// Function to show/hide divs based on selected option
+function showHideDivs() {
+  var selectedOption = $("input[name='radio-group']:checked").attr("id");
+
+  if (selectedOption === "radio2") {
+    showHideRoundTrip();
+  } else if (selectedOption === "radio3") {
+    showHideMultiCity();
+  } else {
+    showHideOneWay();
+  }
+}
+
+// Attach the showHideDivs function to the change event of radio buttons
+$(".trip-options input[type='radio']").on("change", showHideDivs);
+
+// Attach the updateValues function to the change event of traveler selects
+$(".fieldSet select, .selectClass select").on("change", function () {
+  // Determine the context based on the visibility of the divs
+  var context;
+  if ($(".option-oneWay").is(":visible")) {
+    context = "option-oneWay";
+  } else if ($(".option-roundtrip").is(":visible")) {
+    context = "option-roundtrip";
+  } else if ($(".option-multicity").is(":visible")) {
+    context = "option-multicity";
+  }
+
+  updateValues(context);
+});
+
+// Initial update
+updateValues("option-oneWay"); // or "option-roundtrip" based on your default visibility
+showHideDivs();
+
+// Initial row count
+var rowCount = 1; // Updated initial count
+
+// Function to add a new row
+function addRow() {
+  if (rowCount < 6) {
+    var newRow = $(".trip-control.option-multicity .row:first").clone();
+    rowCount++;
+    $(".trip-control.option-multicity .data-row").append(newRow);
+    newRow.show(); // Show the newly added row
+
+    // Remove any existing "Remove Next to Last Row" button
+    $(".trip-control.option-multicity .removeNextToLastRow").remove();
+
+    // Create the remove button and append it to the new row
+    var removeButton = $("<button>")
+      .html("<i class='fa-solid fa-x'></i>")
+      .addClass("removeNextToLastRow")
+      .attr("id", "removeNextToLastRow");
+    newRow.append(removeButton);
+
+    updateRemoveButtonVisibility(); // Update the visibility of the remove button
+    // Adjustments for the styling of the added row (if needed)
+  } else {
+    alert("You can't add up to 6 rows.");
+  }
+}
+
+// Function to remove the row next to the last row
+function removeRowRemover() {
+  if (rowCount > 3) {
+    // Ensure there are at least 3 rows
+    $(".trip-control.option-multicity .row:nth-last-child(3)").remove();
+    rowCount--;
+    updateRemoveButtonVisibility();
+  }
+}
+
+// Function to update the visibility and position of the remove button
+function updateRemoveButtonVisibility() {
+  if (rowCount > 3) {
+    // Show the button and move it to the last row
+    $(".trip-control.option-multicity .removeNextToLastRow").show();
+    $(".trip-control.option-multicity .row:first").append(
+      $(".removeNextToLastRow")
+    );
+  } else {
+    // Hide the button
+    $(".trip-control.option-multicity .removeNextToLastRow").hide();
+  }
+}
+
+for (var i = 0; i < 2; i++) {
+  addRow();
+}
+
+// Event listener for the "Add Row" button
+$(".trip-control.option-multicity").on("click", ".addRowButton", function () {
+  addRow();
+});
+
+// Event listener for the "Remove Next to Last Row" button
+$(".trip-control.option-multicity").on(
+  "click",
+  ".removeNextToLastRow",
+  function () {
+    removeRowRemover();
+    updateRemoveButtonVisibility();
+  }
+);
+
+// Initial update of the remove button visibility
+updateRemoveButtonVisibility();

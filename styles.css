@@ -118,7 +118,110 @@ ul {
   border-radius: 6px 0 0 6px !important;
 }
 
-/* JS Elements */
+.my-login-page {
+  background-color: #f8f8f8;
+  font-size: 14px;
+  height: 100%;
+  text-align: right;
+}
+.my-login-page a {
+  color: #007bff;
+}
+.my-login-page .float-right {
+  font-weight: 400;
+}
+.my-login-page .card-title {
+  color: #fd8f1c;
+  font-weight: 800;
+}
+.my-login-page input {
+  text-align: right;
+}
+.my-login-page .brand {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+}
+.my-login-page .brand img {
+  width: 95%;
+}
+.my-login-page .card-wrapper {
+  width: 700px;
+}
+.my-login-page .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.my-login-page .card .card-title {
+  margin-bottom: 30px;
+}
+.my-login-page .card.fat {
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.my-login-page .card.fat .image {
+  height: auto;
+  width: 300px;
+}
+.my-login-page .card.fat .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.my-login-page .form-control {
+  border-width: 2.3px;
+}
+.my-login-page .form-group label {
+  width: 100%;
+  font-size: 16px;
+}
+.my-login-page .form-group .password {
+  padding-left: 60px;
+}
+.my-login-page .btn.btn-block {
+  padding: 12px 10px;
+}
+.my-login-page .footer {
+  margin: 40px 0;
+  color: #5abaf1;
+  text-align: center;
+}
+.my-login-page .custom-control {
+  padding-right: 1.5rem;
+  padding-left: 0rem;
+  cursor: pointer;
+}
+.my-login-page .custom-control-label {
+  font-size: 13px !important;
+  cursor: pointer;
+}
+.my-login-page .custom-control-label::before {
+  top: 1px;
+  left: 100%;
+  margin-left: 5px;
+}
+.my-login-page .custom-control-label::after {
+  top: 1px;
+  left: 100%;
+  margin-left: 5px;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -189,6 +292,15 @@ nav .logo img {
   color: #fff;
   transition: 0.5s;
 }
+.login a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.login:hover {
+  color: #fff !important;
+}
 
 .language-btn {
   border: 0;
@@ -215,7 +327,7 @@ header.header-bg .logo img {
 
 .land {
   position: relative;
-  background: url(imgs/land2.jpg);
+  background: url(https://cdn.pixabay.com/photo/2020/01/25/10/36/ferris-wheel-4792152_1280.jpg);
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -243,7 +355,7 @@ header.header-bg .logo img {
   text-align: center;
 }
 .land .container .content .heading p span {
-  color: #fd8f1c;
+  color: #3e6be8;
 }
 .land .container .content .heading h2 {
   text-align: center;
@@ -252,7 +364,7 @@ header.header-bg .logo img {
   line-height: 90px;
 }
 .land .container .content .heading h2 span {
-  color: #fd8f1c;
+  color: #3e6be8;
 }
 .land .container .content .heading .paragraph {
   font-size: 30px;
@@ -311,9 +423,10 @@ header.header-bg .logo img {
 .land .container .content .booking-box .booking-control .booking-options ul li i {
   font-size: 22px;
   color: #081d4e;
+  transition: 0s;
 }
 .land .container .content .booking-box .booking-control .booking-options ul li.active {
-  background-color: rgb(255, 173, 40);
+  background-color: #0b3e91;
   color: #fff;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2549019608);
 }
@@ -329,6 +442,18 @@ header.header-bg .logo img {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+.land .container .content .booking-box .booking-control .booking-info.trip .row .city-search,
+.land .container .content .booking-box .booking-control .booking-info.trip .row .input-box,
+.land .container .content .booking-box .booking-control .booking-info.trip .row .input-field {
+  width: 95%;
+  border: 0 !important;
+}
+.land .container .content .booking-box .booking-control .booking-info.trip .row .input-field {
+  justify-content: end !important;
+}
+.land .container .content .booking-box .booking-control .booking-info.trip .row .input-field input {
+  width: 100%;
 }
 .land .container .content .booking-box .booking-control .booking-info .trip-options {
   display: flex;
@@ -392,6 +517,9 @@ header.header-bg .logo img {
   border-top: 1px solid rgb(206, 206, 206);
   width: 100%;
   padding: 15px 0;
+}
+.land .container .content .booking-box .booking-control .booking-info .trip-control.option-hotel, .land .container .content .booking-box .booking-control .booking-info .trip-control.option-trip {
+  border-top: 0;
 }
 .land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity {
   flex-direction: column;
@@ -483,7 +611,7 @@ header.header-bg .logo img {
   gap: 5px;
   background: transparent;
   box-shadow: 0 0 1px 0px #51534e;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px 10px;
   transition: 0.5s;
 }
@@ -613,8 +741,11 @@ header.header-bg .logo img {
   font-size: 18px;
   color: #474747;
   box-shadow: 0 0 1px 0px #51534e;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
   display: flex;
@@ -801,6 +932,7 @@ header.header-bg .logo img {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .experience-section .container {
   max-width: 1430px;
@@ -847,10 +979,11 @@ header.header-bg .logo img {
 .experience-section .container .content .experience-grid {
   display: flex;
   gap: 30px;
+  height: auto;
 }
 .experience-section .container .content .experience-grid .image {
   width: 450px;
-  height: 590px;
+  height: auto;
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   overflow: hidden;
@@ -1201,7 +1334,8 @@ header.header-bg .logo img {
   font-weight: 400;
 }
 .main .heading p span {
-  color: #5abaf1;
+  color: #3e6be8;
+  font-family: "Noto Nastaliq Urdu", serif;
   font-weight: 800;
   font-size: 27px;
 }
@@ -1213,7 +1347,7 @@ header.header-bg .logo img {
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
-  border: 2px solid #5abaf1;
+  border: 2px solid #0b3e91;
 }
 .main .city-search button {
   height: 60px;
@@ -1225,7 +1359,8 @@ header.header-bg .logo img {
   outline: none;
   font-size: 25px;
   color: #fff;
-  background: #5abaf1;
+  background: #0b3e91;
+  cursor: pointer;
 }
 .main .city-search .search-box {
   width: 80%;
@@ -1644,11 +1779,10 @@ header.header-bg .logo img {
 }
 
 .blog-main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769938.jpg?w=1380&t=st=1702145024~exp=1702145624~hmac=80408eb528bdf4c0848114862c22180b42b67ecbd18af1bedd718926c0dc3793);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(imgs/blog-background.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
-  height: 800px;
+  height: 700px;
 }
 .blog-main .container {
   display: flex;
@@ -1742,7 +1876,7 @@ header.header-bg .logo img {
   align-items: center;
   justify-content: end;
   gap: 2px;
-  color: #000;
+  color: #474747;
   font-weight: 600;
 }
 .blog-main .container .main-content .trip-search .Rihla-features i {
@@ -2027,9 +2161,12 @@ header.header-bg .logo img {
   justify-content: center;
   align-items: center;
 }
+.customer-reviews .container {
+  max-width: 1130px;
+  width: 100%;
+}
 .customer-reviews .content {
   padding: 30px 0;
-  max-width: 1130px;
 }
 .customer-reviews .content .controls-title {
   display: flex;
@@ -2161,6 +2298,10 @@ header.header-bg .logo img {
           user-select: none;
 }
 
+.newsletter-blog {
+  display: none;
+}
+
 .sponsors {
   padding: 80px 0;
 }
@@ -2196,7 +2337,7 @@ header.header-bg .logo img {
 }
 
 .about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/blog-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/14292166/pexels-photo-14292166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-position: center center;
   background-size: cover;
   padding: 80px 0;
@@ -2212,6 +2353,7 @@ header.header-bg .logo img {
 
 .story {
   padding: 4% 0 !important;
+  height: 600px !important;
 }
 .story h3 {
   position: relative;
@@ -2254,19 +2396,21 @@ header.header-bg .logo img {
 }
 .story .about-img {
   position: relative;
+  height: 408.891px;
+  width: 90%;
 }
 .story .about-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  -o-object-position: center;
+     object-position: center;
 }
 
 /* ^ -------- start counter--------- */
 .counter-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./imgs/offers-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .counter-section h3 {
   color: #fd8f1c;
@@ -2432,10 +2576,18 @@ footer .copyright-section p:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(216, 216, 216);
+  background-color: rgba(7, 9, 49, 0.5137254902);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 99;
-  top: -100%;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
   transition: 0.5s cubic-bezier(0.38, 0.32, 0.65, 1.04);
+}
+.phone-nav .heading h3 {
+  color: #fd8f1c !important;
+  font-family: "Noto Nastaliq Urdu", serif;
 }
 .phone-nav .stores-icons {
   display: flex;
@@ -2464,15 +2616,14 @@ footer .copyright-section p:nth-child(2) {
   padding: 5px 10px;
   width: 190px;
   cursor: pointer;
-  border: 1px solid #797979;
   color: #fff;
   margin-top: 15px;
-  border: 1px solid #050505;
-  color: #000;
+  border: 1px solid rgb(206, 206, 206);
+  color: #fff;
 }
 .phone-nav .stores-icons .store i {
   font-size: 35px;
-  color: #000;
+  color: #fff;
 }
 .phone-nav .stores-icons .store h4 {
   text-transform: capitalize;
@@ -2493,7 +2644,7 @@ footer .copyright-section p:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #357398;
+  background: #0b3e91;
   border-radius: 50%;
 }
 .phone-nav .container {
@@ -2522,13 +2673,16 @@ footer .copyright-section p:nth-child(2) {
   font-size: 35px;
 }
 .phone-nav .nav-items li {
-  border-bottom: 1px solid #797979;
+  border-bottom: 1px solid rgb(206, 206, 206);
 }
 .phone-nav .nav-items li:last-child {
   border-bottom: 0;
 }
 .phone-nav .nav-items a {
-  color: #000;
+  color: #fff;
+}
+.phone-nav .nav-items a.active {
+  color: #fd8f1c;
 }
 .phone-nav .nav-options {
   margin-top: 8%;
@@ -2536,7 +2690,7 @@ footer .copyright-section p:nth-child(2) {
 }
 .phone-nav .login.btn {
   position: relative;
-  background-color: #357398;
+  background-color: #0b3e91;
   font-weight: 500;
   font-size: 20px;
   padding: 5px 80px;
@@ -2553,9 +2707,120 @@ footer .copyright-section p:nth-child(2) {
 }
 
 .phone-nav.show-nav {
-  top: 0;
+  opacity: 1;
+  pointer-events: all;
 }
 
+.animate {
+  filter: blur(5px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.packages-section.show-animate .animate,
+.experience-section.show-animate .animate,
+.popular-destinations.show-animate .animate,
+.sponsors.show-animate .animate {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.packages-section .heading {
+  transform: translateY(-100px);
+}
+.packages-section .packages {
+  transform: translateY(100px);
+}
+.packages-section.show-animate .animate {
+  transform: translateY(0);
+}
+
+.experience-section .heading {
+  transform: translateY(-100px);
+}
+.experience-section .image.animate {
+  height: 0 !important;
+}
+.experience-section .animate.box1 {
+  transform: translateX(50px);
+  transition-delay: 0.1s;
+}
+.experience-section .animate.box2 {
+  transform: translateX(60px);
+  transition-delay: 0.2s;
+}
+.experience-section .animate.box3 {
+  transform: translateX(90px);
+  transition-delay: 0.3s;
+}
+.experience-section .animate.box4 {
+  transform: translateX(50px);
+  transition-delay: 0.4s;
+}
+.experience-section.show-animate .heading {
+  transform: translateY(0px);
+}
+.experience-section.show-animate .image.animate {
+  height: 590px !important;
+}
+.experience-section.show-animate .experience-box.animate {
+  transform: translate(0);
+}
+
+.sponsors .animate {
+  transform: translateY(100px);
+  transition-delay: 0s;
+}
+.sponsors.show-animate .animate {
+  transform: translateY(0);
+}
+.sponsors.show-animate .animate.company1 {
+  transition-delay: 0.2s;
+}
+.sponsors.show-animate .animate.company2 {
+  transition-delay: 0.4s;
+}
+.sponsors.show-animate .animate.company3 {
+  transition-delay: 0.6s;
+}
+.sponsors.show-animate .animate.company4 {
+  transition-delay: 0.8s;
+}
+.sponsors.show-animate .animate.company5 {
+  transition-delay: 1s;
+}
+.sponsors.show-animate .animate.company6 {
+  transition-delay: 1.2s;
+}
+
+.popular-destinations .heading {
+  transform: translateY(-100px);
+}
+.popular-destinations .animate.animate1 {
+  transform: translateY(-100px);
+}
+.popular-destinations.show-animate .heading {
+  transform: translateY(0);
+}
+.popular-destinations.show-animate .animate.animate2 {
+  animation: popUp 1s ease forwards;
+  transform-origin: center;
+}
+.popular-destinations.show-animate .animate.animate1 {
+  transform: translateY(0px);
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media (max-width: 1470px) {
   .land {
     height: 90vh;
@@ -2663,6 +2928,9 @@ footer .copyright-section p:nth-child(2) {
   }
   .trips-recommendation .container .right {
     right: -55px;
+  }
+  .experience-section.show-animate .image.animate {
+    height: 470px !important;
   }
 }
 @media (max-width: 1215px) {
@@ -3231,6 +3499,113 @@ footer .copyright-section p:nth-child(2) {
   .popular-destinations .container .content .heading p {
     font-size: 15px;
   }
+  .blog-posts .container .posts-content {
+    gap: 30px;
+    padding: 50px 0;
+  }
+  .blog-posts .container .posts-content .posts {
+    gap: 60px;
+  }
+  .blog-posts .container .posts-content .posts .post {
+    width: 550px;
+  }
+  .blog-posts .container .posts-content .posts .post .heading {
+    font-size: 23px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-image {
+    height: 300px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption {
+    padding: 20px 25px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .title {
+    font-size: 25px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .links button {
+    font-size: 16px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .links .social ul li i {
+    font-size: 20px;
+  }
+  .blog-posts .container .posts-content .rihla-info {
+    width: 250px;
+  }
+  .blog-posts .container .posts-content .rihla-info .box {
+    padding: 20px 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .about-rihla h3 {
+    font-size: 20px;
+  }
+  .blog-posts .container .posts-content .rihla-info .about-rihla p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .blog-posts .container .posts-content .rihla-info .newsletter h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .blog-posts .container .posts-content .rihla-info .newsletter input {
+    font-size: 13px;
+  }
+  .blog-posts .container .posts-content .rihla-info .newsletter button {
+    font-size: 13px;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store {
+    width: 80%;
+    padding: 10px 0;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store i {
+    font-size: 20px;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store p {
+    font-size: 13px;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app .store h4 {
+    font-size: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .customer-reviews h3 {
+    font-size: 22px;
+  }
+  .blog-posts .container .posts-content .rihla-info .customer-reviews .stars i {
+    font-size: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .customer-reviews h4 {
+    font-size: 20px;
+  }
+  .blog-posts .container .posts-content .rihla-info .customer-reviews p {
+    font-size: 12px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info h3 {
+    margin-bottom: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .infos .info {
+    margin-bottom: 8px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .infos .info .icon i {
+    font-size: 18px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .infos .info .info-content h4 {
+    font-size: 15px;
+    text-align: left;
+    line-height: 13px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .infos .info .info-content a {
+    font-size: 13px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .icon i {
+    font-size: 22px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .feature-content h4,
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .feature-content p {
+    font-size: 13px;
+    text-align: right;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .feature-content h4 {
+    font-size: 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info .booking-features .feature .feature-content p {
+    line-height: 25px;
+  }
   .activities-cards {
     padding: 2em 0%;
   }
@@ -3261,6 +3636,9 @@ footer .copyright-section p:nth-child(2) {
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+  .experience-section.show-animate .image.animate {
+    height: 410px !important;
   }
 }
 @media (max-width: 923px) {
@@ -3460,6 +3838,40 @@ footer .copyright-section p:nth-child(2) {
     position: relative;
     height: 100%;
   }
+  .blog-main {
+    height: 90vh;
+  }
+  .blog-main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .blog-main .container .main-content {
+    width: 100%;
+    padding: 2% 5% 0;
+  }
+  .blog-main .container .main-content .heading h2 {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0px;
+  }
+  .blog-main .container .main-content .heading h2 > div {
+    font-size: 65px;
+    line-height: 70px;
+  }
+  .blog-main .container .main-content .trip-search {
+    width: 350px;
+  }
+  .blog-main .container .main-content .trip-search .input-box input {
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 30px;
+  }
+  .blog-main .container .main-content .trip-search .input-box .button {
+    width: 110px;
+    height: 40px;
+  }
 }
 @media (max-width: 860px) {
   .experience-section .container {
@@ -3524,8 +3936,11 @@ footer .copyright-section p:nth-child(2) {
   .popular-destinations .container .content .destinations .row.second .destination .title h4 {
     font-size: 30px;
   }
+  .experience-section.show-animate .image.animate {
+    height: 310px !important;
+  }
 }
-@media (max-width: 800px) {
+@media (max-width: 835px) {
   header nav {
     width: 100%;
     padding: 1% 5%;
@@ -3602,10 +4017,12 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
     font-size: 13px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label,
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
     font-size: 18px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input,
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
     font-size: 15px;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
@@ -3614,6 +4031,106 @@ footer .copyright-section p:nth-child(2) {
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton i {
     font-size: 20px;
+  }
+  .blog-posts .container .posts-content {
+    gap: 30px;
+    padding: 50px 0;
+    flex-direction: column-reverse;
+  }
+  .blog-posts .container .posts-content .posts {
+    gap: 60px;
+  }
+  .blog-posts .container .posts-content .posts .post {
+    width: 550px;
+  }
+  .blog-posts .container .posts-content .posts .post .heading {
+    font-size: 23px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-image {
+    height: 300px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption {
+    padding: 20px 25px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .title {
+    font-size: 25px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .links button {
+    font-size: 16px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .links .social ul li i {
+    font-size: 20px;
+  }
+  .blog-posts .container .posts-content .rihla-info {
+    width: 550px;
+  }
+  .blog-posts .container .posts-content .rihla-info .box {
+    padding: 20px 15px;
+  }
+  .blog-posts .container .posts-content .rihla-info .about-rihla h3 {
+    font-size: 23px;
+  }
+  .blog-posts .container .posts-content .rihla-info .about-rihla p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .blog-posts .container .posts-content .rihla-info .newsletter {
+    display: none;
+  }
+  .blog-posts .container .posts-content .rihla-info .mobile-app {
+    display: none;
+  }
+  .blog-posts .container .posts-content .rihla-info .customer-reviews {
+    display: none;
+  }
+  .blog-posts .container .posts-content .rihla-info .booking-info {
+    display: none;
+  }
+  .customer-reviews {
+    margin-bottom: 50px;
+  }
+  .customer-reviews .content {
+    padding: 0 20px;
+  }
+  .customer-reviews .content .controls-title .title h3 {
+    font-size: 30px;
+  }
+  .customer-reviews .content .controls-title .arrows .arrow {
+    width: 50px;
+    height: 50px;
+  }
+  .customer-reviews .content .controls-title .arrows .arrow .arr {
+    width: 20px;
+    height: 2px;
+  }
+  .customer-reviews .content .controls-title .arrows .arrow .arr::after {
+    top: -5px;
+    height: 10px;
+    width: 10px;
+  }
+  .customer-reviews .content .reviews {
+    grid-auto-columns: calc(50% - 14px);
+  }
+  .customer-reviews .content .reviews .review-card .review-title {
+    font-size: 20px;
+  }
+  .customer-reviews .content .reviews .review-card .review-content {
+    text-align: right;
+  }
+  .customer-reviews .content .reviews .review-card .reviewer {
+    gap: 5px;
+  }
+  .customer-reviews .content .reviews .review-card .reviewer .name {
+    font-size: 18px;
+  }
+  .customer-reviews .content .reviews .review-card .stars {
+    gap: 2px;
+  }
+  .customer-reviews .content .reviews .review-card .stars i {
+    color: #fd8f1c;
+  }
+  .newsletter-blog {
+    display: block;
   }
 }
 @media (max-width: 740px) {
@@ -3842,10 +4359,12 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
     font-size: 13px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label,
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
     font-size: 18px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input,
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
     font-size: 15px;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
@@ -3854,6 +4373,104 @@ footer .copyright-section p:nth-child(2) {
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton i {
     font-size: 20px;
+  }
+}
+@media (max-width: 585px) {
+  .blog-main .container .main-content {
+    width: 100%;
+    padding: 10% 5% 0;
+  }
+  .blog-main .container .main-content .heading h2 {
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0px;
+  }
+  .blog-main .container .main-content .heading h2 > div {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .blog-main .container .main-content .trip-search {
+    padding: 10px;
+    width: 280px;
+  }
+  .blog-main .container .main-content .trip-search .input-box input {
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 30px;
+  }
+  .blog-main .container .main-content .trip-search .input-box .button {
+    width: 110px;
+    height: 35px;
+  }
+  .blog-posts .container .posts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-posts .container .posts-content .posts {
+    gap: 30px;
+  }
+  .blog-posts .container .posts-content .posts .post {
+    width: 350px;
+  }
+  .blog-posts .container .posts-content .posts .post .heading {
+    font-size: 22px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-image {
+    height: 200px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .title {
+    font-size: 20px;
+  }
+  .blog-posts .container .posts-content .posts .post .post-card .post-caption .description {
+    font-size: 13px;
+  }
+  .blog-posts .container .rihla-info {
+    width: 350px !important;
+  }
+  .customer-reviews {
+    margin-bottom: 50px;
+  }
+  .customer-reviews .content {
+    padding: 0 20px;
+  }
+  .customer-reviews .content .controls-title .title h3 {
+    font-size: 26px;
+  }
+  .customer-reviews .content .controls-title .arrows .arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .customer-reviews .content .controls-title .arrows .arrow .arr {
+    width: 15px;
+    height: 2px;
+  }
+  .customer-reviews .content .controls-title .arrows .arrow .arr::after {
+    top: -5px;
+    height: 10px;
+    width: 10px;
+  }
+  .customer-reviews .content .reviews {
+    grid-auto-columns: calc(100% - 7px);
+  }
+  .customer-reviews .content .reviews .review-card .review-title {
+    font-size: 20px;
+  }
+  .customer-reviews .content .reviews .review-card .review-content {
+    text-align: right;
+  }
+  .customer-reviews .content .reviews .review-card .reviewer {
+    gap: 5px;
+  }
+  .customer-reviews .content .reviews .review-card .reviewer .name {
+    font-size: 18px;
+  }
+  .customer-reviews .content .reviews .review-card .stars {
+    gap: 2px;
+  }
+  .customer-reviews .content .reviews .review-card .stars i {
+    color: #fd8f1c;
   }
 }
 @media (max-width: 500px) {
@@ -3932,10 +4549,12 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .class {
     font-size: 13px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label,
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
     font-size: 18px;
   }
-  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input, .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input,
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
     font-size: 15px;
     width: 100px;
   }
@@ -4122,5 +4741,33 @@ footer .copyright-section p:nth-child(2) {
   .phone-nav .login.btn {
     font-size: 15px;
     padding: 5px 50px;
+  }
+  .experience-section.show-animate .image.animate {
+    height: 140px !important;
+  }
+}
+@media (max-width: 425px) {
+  .my-login-page .card-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .my-login-page .card.fat {
+    padding: 0;
+  }
+  .my-login-page .card.fat .card-body {
+    padding: 15px;
+  }
+}
+@media (max-width: 1199px) {
+  .story .about-img {
+    height: 516.531px;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .story .about-img {
+    height: 300px;
   }
 }/*# sourceMappingURL=styles.css.map */

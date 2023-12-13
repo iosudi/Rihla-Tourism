@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Page Title -->
-    <title>استكشف الأنشطة السياحية في الوطن العربي مع رحلة</title>
+    <title>استكشف مع رحلة: احجز الآن لتجربة سياحية فريدة ولا تُنسى</title>
   </head>
 
   <body>
@@ -47,7 +47,9 @@
 
         <div class="nav-options">
           <button class="login btn">
-            تسجيل الدخول <i class="bx bxs-user-circle"></i>
+            <a href="login.html">
+              <i class="bx bxs-user-circle"></i>تسجيل الدخول
+            </a>
           </button>
         </div>
 
@@ -105,7 +107,9 @@
               <i class="bx bx-world"></i>
             </button>
             <button class="login btn">
-              <i class="bx bxs-user-circle"></i>تسجيل الدخول
+              <a href="login.html">
+                <i class="bx bxs-user-circle"></i>تسجيل الدخول
+              </a>
             </button>
             <div class="collapsed-nav">
               <i class="fa-solid fa-bars"></i>
@@ -129,14 +133,14 @@
             <div class="booking-control">
               <div class="booking-options">
                 <ul>
-                  <li class="active">
+                  <li id="plane">
                     طيران <i class="fa-solid fa-plane-departure"></i>
                   </li>
-                  <li>فنادق <i class="fa-solid fa-hotel"></i></li>
-                  <li>رحلات <i class="fa-solid fa-tree"></i></li>
+                  <li id="hotel">فنادق <i class="fa-solid fa-hotel"></i></li>
+                  <li id="trip">رحلات <i class="fa-solid fa-tree"></i></li>
                 </ul>
               </div>
-              <div class="booking-info">
+              <div class="booking-info plane">
                 <div class="trip-options">
                   <div class="trip-option">
                     <input
@@ -525,6 +529,135 @@
                   </div>
                 </div>
               </div>
+              <div class="booking-info hotel">
+                <div class="trip-control option-hotel">
+                  <div class="row">
+                    <div class="from control from-to">
+                      <div class="input-box">
+                        <label>الوجهة</label>
+                        <div class="input-field">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <input type="text" placeholder="المدينة أو الفندق" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="start-date control">
+                      <label>نزول الفندق</label>
+                      <input type="date" />
+                    </div>
+                    <div class="finish-date control">
+                      <label>مغادرة الفندق</label>
+                      <input type="date" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="traveler-class control">
+                      <div class="label"><p>المسافرين, الدرجه</p></div>
+                      <div class="select">
+                        <div class="counter">
+                          <span class="numberOfTravllers">1</span>
+                          <span class="name">مسافر</span>
+                        </div>
+                        <span class="icon">
+                          <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                      </div>
+                      <div class="class"><span>السياحية</span></div>
+                      <div class="selectWindow">
+                        <div class="select-container">
+                          <div class="ages">
+                            <div class="fieldSet">
+                              <label
+                                >بالغين
+                                <select>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                  <option value="4">٤</option>
+                                  <option value="5">٥</option>
+                                  <option value="6">٦</option>
+                                  <option value="7">٧</option>
+                                  <option value="8">٨</option>
+                                  <option value="9">٩</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(١٢ سنة+)</div>
+                            </div>
+
+                            <div class="fieldSet">
+                              <label
+                                >أطفال
+                                <select>
+                                  <option value="0">٠</option>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(١٢-٢ سنة)</div>
+                            </div>
+                            <div class="fieldSet">
+                              <label
+                                >رضيع
+                                <select>
+                                  <option value="0">٠</option>
+                                  <option value="1">١</option>
+                                  <option value="2">٢</option>
+                                  <option value="3">٣</option>
+                                  <option value="4">٤</option>
+                                </select></label
+                              >
+                              <div class="ageRange">(أقل من سنتين)</div>
+                            </div>
+                          </div>
+                          <div class="selectClass">
+                            <div class="label">
+                              الدرجة
+                              <select>
+                                <option value="السياحية">السياحية</option>
+                                <option value="رجال أعمال">رجال أعمال</option>
+                                <option value="الأولي">الأولي</option>
+                              </select>
+                            </div>
+                          </div>
+                          <button>
+                            موافق
+                            <span
+                              ><i class="fa-regular fa-circle-check"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="searchButton">
+                      <i class="bx bx-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="booking-info trip">
+                <div class="trip-control option-hotel">
+                  <div class="row">
+                    <div class="from control city-search from-to">
+                      <div class="input-box">
+                        <label>اختر المدينة</label>
+                        <div class="input-field">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <input
+                            type="text"
+                            placeholder="ابحث بواسطة اسم المدينة"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="searchButton">
+                      <i class="bx bx-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -534,11 +667,11 @@
     <section class="packages-section">
       <div class="container">
         <div class="content">
-          <div class="heading">
+          <div class="heading animate">
             <h3>الرحلات <span>الرائجة</span></h3>
             <p>الرحلات السياحيه الاكثر شعبية المقدمة لك</p>
           </div>
-          <div class="packages">
+          <div class="packages animate">
             <div class="package">
               <div class="image">
                 <img
@@ -638,7 +771,7 @@
               </div>
             </div>
           </div>
-          <div class="more-button">
+          <div class="more-button animate">
             <span class="line left"></span>
             <button>اكتشف المزيد</button>
             <span class="line right"></span>
@@ -650,19 +783,19 @@
     <section class="experience-section">
       <div class="container">
         <div class="content">
-          <div class="heading">
+          <div class="heading animate">
             <h3>الخبرة <span>و الخدمات</span></h3>
             <p>الخبرة والخدمة علي أعلي مستوي من الجودة</p>
           </div>
           <div class="experience-grid">
-            <div class="image">
+            <div class="image animate">
               <img
                 src="https://images.pexels.com/photos/1433052/pexels-photo-1433052.jpeg?auto=compress&cs=tinysrgb&w=1600"
               />
             </div>
             <div class="boxes">
               <div class="row">
-                <div class="experience-box">
+                <div class="experience-box animate box1">
                   <div class="title">
                     <h4>+٣٠</h4>
                     <h5>سنه من الخبره</h5>
@@ -670,7 +803,7 @@
                   <p>استمتع برحلات سياحية استثنائية مع خبرة لا مثيل لها</p>
                 </div>
 
-                <div class="experience-box">
+                <div class="experience-box animate box2">
                   <div class="title">
                     <h4>٤٠+ الـف</h4>
                     <h5>مسافر مسرور</h5>
@@ -680,7 +813,7 @@
               </div>
 
               <div class="row">
-                <div class="experience-box">
+                <div class="experience-box animate box3">
                   <div class="title">
                     <h4>حـجـز</h4>
                     <h5>سهل</h5>
@@ -688,7 +821,7 @@
                   <p>حجز سهل وسريع يجعل رحلتك ممتعة وميسرة بكل يسر</p>
                 </div>
 
-                <div class="experience-box">
+                <div class="experience-box animate box4">
                   <div class="title">
                     <h4>أفـضـل</h4>
                     <h5>المرشدين السياحين</h5>
@@ -745,14 +878,14 @@
     <section class="popular-destinations">
       <div class="container">
         <div class="content">
-          <div class="heading">
+          <div class="heading animate">
             <h3>اشهر <span>الوجهات</span></h3>
             <p>الوجهات السياحية الاكثر شهرة المقدمة لك</p>
           </div>
           <div class="destinations">
             <div class="row first">
               <div
-                class="destination"
+                class="destination animate animate1"
                 style="
                   background-image: url(https://images.pexels.com/photos/14435169/pexels-photo-14435169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
                 "
@@ -763,7 +896,7 @@
                 </div>
               </div>
               <div
-                class="destination"
+                class="destination animate animate1"
                 style="
                   background-image: url(https://images.pexels.com/photos/3889761/pexels-photo-3889761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
                 "
@@ -776,7 +909,7 @@
             </div>
             <div class="row second">
               <div
-                class="destination"
+                class="destination animate animate2"
                 style="
                   background-image: url(https://images.pexels.com/photos/14765462/pexels-photo-14765462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
                 "
@@ -787,7 +920,7 @@
                 </div>
               </div>
               <div
-                class="destination"
+                class="destination animate animate2"
                 style="
                   background-image: url(https://images.pexels.com/photos/4560328/pexels-photo-4560328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
                 "
@@ -798,7 +931,7 @@
                 </div>
               </div>
               <div
-                class="destination"
+                class="destination animate animate2"
                 style="
                   background-image: url(https://images.pexels.com/photos/4388167/pexels-photo-4388167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
                 "
@@ -842,27 +975,27 @@
       </div>
     </section>
 
-    <section class="sponsors">
+     <section class="sponsors">
       <div class="container">
         <div class="content">
-          <div class="sponsor-company">
+          <div class="sponsor-company animate company1">
             <img src="imgs/sponsors/egyptair-logo.svg" />
           </div>
-          <div class="sponsor-company">
+          <div class="sponsor-company animate company2">
             <img src="imgs/sponsors/Emirates_logo.svg" />
           </div>
-          <div class="sponsor-company">
+          <div class="sponsor-company animate company3">
             <img src="imgs/sponsors/hilton-international.svg" />
           </div>
-          <div class="sponsor-company">
+          <div class="sponsor-company animate company4">
             <img
               src="imgs/sponsors/four-seasons-hotels-limited-vector-logo.svg"
             />
           </div>
-          <div class="sponsor-company">
+          <div class="sponsor-company animate company5">
             <img src="imgs/sponsors/saudi-airlines-logo.svg" />
           </div>
-          <div class="sponsor-company">
+          <div class="sponsor-company animate company6">
             <img src="imgs/sponsors/Qatar_Airways_logo.svg" />
           </div>
         </div>
@@ -954,10 +1087,10 @@
       </div>
       <div class="copyright-section">
         <p>قارن الرحلات الرخيصة واحجزها من خلال رحلة</p>
-        <p>Rihla Ltd 2002 – 2023 ©</p>
+        <p>Rihla Ltd 2019 – 2023 ©</p>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

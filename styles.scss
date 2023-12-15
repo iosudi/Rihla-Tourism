@@ -158,6 +158,12 @@ nav {
     gap: 1em;
     font-size: 20px;
   }
+  li {
+    a.active {
+      color: $color_5;
+      
+    }
+  }
 }
 
 .collapsed-nav {
@@ -2353,7 +2359,7 @@ footer {
           line-height: 10px;
           text-transform: capitalize;
           text-align: left;
-          margin-top: 5px;
+          margin: 5px 0;
         }
       }
     }
@@ -2511,9 +2517,13 @@ footer {
       }
       h4 {
         text-transform: capitalize;
+        font-size: 15px;
+        margin-bottom: 0;
       }
       p {
         text-align: left;
+        margin-bottom: 0;
+        font-size: 13px;
       }
     }
   }

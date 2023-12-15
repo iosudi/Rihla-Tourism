@@ -273,6 +273,9 @@ nav .logo img {
   gap: 1em;
   font-size: 20px;
 }
+.nav-items li a.active {
+  color: #fd8f1c;
+}
 
 .collapsed-nav {
   display: none;
@@ -2516,7 +2519,7 @@ footer .app-section .stores-icons .store h4 {
   line-height: 10px;
   text-transform: capitalize;
   text-align: left;
-  margin-top: 5px;
+  margin: 5px 0;
 }
 footer .app-section .store {
   display: flex;
@@ -2661,9 +2664,13 @@ footer .copyright-section p:nth-child(2) {
 }
 .phone-nav .stores-icons .store h4 {
   text-transform: capitalize;
+  font-size: 15px;
+  margin-bottom: 0;
 }
 .phone-nav .stores-icons .store p {
   text-align: left;
+  margin-bottom: 0;
+  font-size: 13px;
 }
 .phone-nav .stores-icon .store .store-info p {
   text-align: left;
@@ -2972,7 +2979,6 @@ footer .copyright-section p:nth-child(2) {
 }
 @media (max-width: 1215px) {
   .land {
-    height: 90vh;
     align-items: center;
   }
   .land .container .content .heading {
@@ -3328,7 +3334,6 @@ footer .copyright-section p:nth-child(2) {
     width: 5em;
   }
   .land {
-    height: 90vh;
     align-items: center;
   }
   .land .container .content .heading {
@@ -3695,7 +3700,6 @@ footer .copyright-section p:nth-child(2) {
 }
 @media (max-width: 923px) {
   .land {
-    height: 90vh;
     align-items: center;
   }
   .land .container .content .heading {
@@ -4029,7 +4033,6 @@ footer .copyright-section p:nth-child(2) {
     width: 40%;
   }
   .land {
-    height: 90vh;
     align-items: center;
   }
   .land .container .content .booking-box .booking-control .booking-options ul li {
@@ -4356,7 +4359,6 @@ footer .copyright-section p:nth-child(2) {
 }
 @media (max-width: 700px) {
   .land {
-    height: 90vh;
     align-items: center;
   }
   .land .container .content .booking-box .booking-control {
@@ -4534,7 +4536,6 @@ footer .copyright-section p:nth-child(2) {
 }
 @media (max-width: 500px) {
   .land {
-    height: 90vh;
     align-items: center;
   }
   .land .container .content .heading {
@@ -4602,6 +4603,9 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class {
     width: 60%;
   }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .selectWindow {
+    right: -10%;
+  }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .traveler-class .label {
     font-size: 13px;
   }
@@ -4653,6 +4657,9 @@ footer .copyright-section p:nth-child(2) {
   .experience-section .container .content .experience-grid .experience-box p {
     font-size: 12px;
     line-height: 16px;
+  }
+  .offers-section {
+    background-attachment: unset;
   }
   .offers-section .container {
     padding: 50px 0px;

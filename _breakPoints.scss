@@ -162,7 +162,6 @@
 }
 @media (max-width: 1215px) {
   .land {
-    height: 90vh;
     align-items: center;
 
     .container {
@@ -556,7 +555,6 @@
   }
 
   .land {
-    height: 90vh;
     align-items: center;
 
     .container {
@@ -1066,7 +1064,6 @@
 }
 @media (max-width: 923px) {
   .land {
-    height: 90vh;
     align-items: center;
 
     .container {
@@ -1524,7 +1521,6 @@
   }
 
   .land {
-    height: 90vh;
     align-items: center;
 
     .container {
@@ -1950,7 +1946,6 @@
 }
 @media (max-width: 700px) {
   .land {
-    height: 90vh;
     align-items: center;
 
     .container {
@@ -2188,7 +2183,6 @@
 }
 @media (max-width: 500px) {
   .land {
-    height: 90vh;
     align-items: center;
 
     .container {
@@ -2270,6 +2264,9 @@
                 }
 
                 .traveler-class {
+                  .selectWindow {
+                    right: -10%;
+                  }
                   width: 60%;
                   .label {
                     font-size: 13px;
@@ -2344,6 +2341,7 @@
   }
 
   .offers-section {
+    background-attachment: unset;
     .container {
       padding: 50px 0px;
 

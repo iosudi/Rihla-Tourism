@@ -95,6 +95,9 @@ ul {
     color: $color_1;
     cursor: pointer;
     transition: 0.5s;
+    &:hover {
+      box-shadow: 0 5px 10px 0px $border-color;
+    }
   }
   span {
     width: 15vw;

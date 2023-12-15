@@ -102,6 +102,9 @@ ul {
   cursor: pointer;
   transition: 0.5s;
 }
+.more-button button:hover {
+  box-shadow: 0 5px 10px 0px rgb(206, 206, 206);
+}
 .more-button span {
   width: 15vw;
   height: 3px;
@@ -330,6 +333,7 @@ header.header-bg .logo img {
   background: url(https://cdn.pixabay.com/photo/2020/01/25/10/36/ferris-wheel-4792152_1280.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -922,6 +926,12 @@ header.header-bg .logo img {
   border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.5s;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 0 3px 0px rgb(206, 206, 206);
+}
+.packages-section .container .content .packages .package .package-info .package-cost .booking:hover {
+  box-shadow: 0 5px 15px 0px rgb(206, 206, 206);
 }
 .packages-section .container .content .packages .package:hover {
   box-shadow: 0 10px 15px 0px rgb(206, 206, 206);
@@ -945,6 +955,7 @@ header.header-bg .logo img {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  padding: 0 15px;
 }
 .experience-section .container .content .heading {
   margin-bottom: 20px;
@@ -1045,7 +1056,7 @@ header.header-bg .logo img {
 .offers-section {
   background: linear-gradient(rgba(11, 62, 145, 0.5960784314), rgba(11, 62, 145, 0.5960784314)), url("imgs/offers-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -1210,7 +1221,7 @@ header.header-bg .logo img {
 .newsletter-section {
   background: linear-gradient(rgba(11, 62, 145, 0.5960784314), rgba(11, 62, 145, 0.5960784314)), url("imgs/newsletter.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1307,6 +1318,7 @@ header.header-bg .logo img {
 .main {
   background: linear-gradient(rgba(0, 0, 0, 0.499), rgba(0, 0, 0, 0.499)), url(imgs/activites/milad-alizadeh-qzEs-9oX8L8-unsplash.jpg);
   background-attachment: fixed;
+  background-position: center center;
   height: 500px;
   background-position: bottom;
   background-size: cover;
@@ -1418,8 +1430,11 @@ header.header-bg .logo img {
   font-weight: 400;
   color: #fd8f1c;
 }
-.activities .activity:hover {
-  box-shadow: 0 10px 20px rgba(250, 154, 0, 0.521), 0 10px 20px rgba(62, 107, 232, 0.5960784314);
+.activities .activity.large .trip-image {
+  height: 100%;
+}
+.activities .activity .trip-image {
+  height: 242.234px;
 }
 
 #posts {
@@ -1462,6 +1477,15 @@ header.header-bg .logo img {
   justify-content: space-between;
   gap: 10px;
 }
+#posts .container .activity .trip-description h3 {
+  font-weight: 500;
+  color: #081d4e;
+}
+#posts .container .activity .trip-description h3 span {
+  font-family: "Noto Nastaliq Urdu", serif;
+  color: #fd8f1c;
+  font-weight: 700;
+}
 #posts .container .activity .trip-cost button {
   border: 1px solid #3e6be8;
 }
@@ -1493,7 +1517,7 @@ header.header-bg .logo img {
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 2em 10%;
+  padding: 2em 7%;
 }
 #posts .container .carousel {
   position: relative;
@@ -1520,11 +1544,10 @@ header.header-bg .logo img {
   transition: 0.5s;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(78, 78, 78, 0.2549019608);
 }
 #posts .container .carousel .activity .trip-image {
   width: 100%;
@@ -1650,13 +1673,16 @@ header.header-bg .logo img {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(78, 78, 78, 0.2549019608);
   transition: 0.5s;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 0 3px 0px rgb(206, 206, 206);
+}
+.activity:hover {
+  box-shadow: 0 10px 15px 0px rgb(206, 206, 206);
 }
 .activity .trip-image {
   position: relative;
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 .activity .trip-image img {
@@ -1780,6 +1806,7 @@ header.header-bg .logo img {
 
 .blog-main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(imgs/blog-background.jpg);
+  background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   height: 700px;
@@ -2353,7 +2380,6 @@ header.header-bg .logo img {
 
 .story {
   padding: 4% 0 !important;
-  height: 600px !important;
 }
 .story h3 {
   position: relative;
@@ -2409,7 +2435,7 @@ header.header-bg .logo img {
 /* ^ -------- start counter--------- */
 .counter-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 .counter-section h3 {
@@ -2473,6 +2499,9 @@ footer .footer-section {
 footer .app-section {
   color: #fff;
 }
+footer .app-section h3 {
+  font-size: 20px !important;
+}
 footer .app-section .stores-icons {
   display: flex;
   justify-content: space-between;
@@ -2483,7 +2512,11 @@ footer .app-section .stores-icons .store i {
   font-size: 35px;
 }
 footer .app-section .stores-icons .store h4 {
+  font-size: 15px;
+  line-height: 10px;
   text-transform: capitalize;
+  text-align: left;
+  margin-top: 5px;
 }
 footer .app-section .store {
   display: flex;
@@ -2505,6 +2538,7 @@ footer .app-section .store {
 footer .app-section .store .store-info p {
   text-align: left;
   line-height: 20px;
+  margin-bottom: 0;
 }
 footer .app-section .stores-icon {
   display: flex;
@@ -2847,6 +2881,9 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control {
     flex-wrap: wrap;
   }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity {
+    flex-wrap: nowrap;
+  }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
     font-size: 18px;
   }
@@ -2969,6 +3006,9 @@ footer .copyright-section p:nth-child(2) {
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control {
     flex-wrap: wrap;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity {
+    flex-wrap: nowrap;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
     font-size: 18px;
@@ -3324,6 +3364,9 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control {
     flex-wrap: wrap;
   }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity {
+    flex-wrap: nowrap;
+  }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .control {
     padding: 15px 15px;
   }
@@ -3609,8 +3652,17 @@ footer .copyright-section p:nth-child(2) {
   .activities-cards {
     padding: 2em 0%;
   }
+  .activity .trip-image {
+    height: 250px;
+  }
   .activity h3 {
     font-size: 18px;
+  }
+  .activity .trip-description {
+    gap: 5px !important;
+  }
+  .activity .trip-features {
+    gap: 5px !important;
   }
   .activity .trip-details p {
     font-size: 13px;
@@ -3678,6 +3730,9 @@ footer .copyright-section p:nth-child(2) {
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control {
     flex-wrap: wrap;
+  }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity {
+    flex-wrap: nowrap;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
     font-size: 18px;
@@ -3995,6 +4050,9 @@ footer .copyright-section p:nth-child(2) {
   .land .container .content .booking-box .booking-control .booking-info .trip-control {
     flex-wrap: wrap;
   }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity {
+    flex-wrap: nowrap;
+  }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
     font-size: 18px;
   }
@@ -4243,10 +4301,11 @@ footer .copyright-section p:nth-child(2) {
   .activities-cards {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 30px 0;
+    width: 85%;
   }
   .activity {
-    width: 400px;
+    width: 100% !important;
   }
   .activity .trip-details {
     display: none;
@@ -4327,6 +4386,9 @@ footer .copyright-section p:nth-child(2) {
     flex-wrap: wrap;
     padding-bottom: 0;
   }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity {
+    flex-wrap: nowrap;
+  }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .control {
     padding: 15px 8px;
   }
@@ -4376,6 +4438,9 @@ footer .copyright-section p:nth-child(2) {
   }
 }
 @media (max-width: 585px) {
+  .my-login-page .card.fat .image {
+    display: none;
+  }
   .blog-main .container .main-content {
     width: 100%;
     padding: 10% 5% 0;
@@ -4401,12 +4466,6 @@ footer .copyright-section p:nth-child(2) {
   .blog-main .container .main-content .trip-search .input-box .button {
     width: 110px;
     height: 35px;
-  }
-  .blog-posts .container .posts-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .blog-posts .container .posts-content .posts {
     gap: 30px;
@@ -4521,11 +4580,14 @@ footer .copyright-section p:nth-child(2) {
     flex-wrap: wrap;
     padding-bottom: 0;
   }
+  .land .container .content .booking-box .booking-control .booking-info .trip-control.option-multicity {
+    flex-wrap: nowrap;
+  }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .control {
     padding: 15px 8px;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box label {
-    font-size: 16px;
+    font-size: 13px;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .from-to .input-box .input-field {
     width: 100%;
@@ -4551,11 +4613,11 @@ footer .copyright-section p:nth-child(2) {
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date label,
   .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date label {
-    font-size: 18px;
+    font-size: 13px;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .start-date input,
   .land .container .content .booking-box .booking-control .booking-info .trip-control .finish-date input {
-    font-size: 15px;
+    font-size: 13px;
     width: 100px;
   }
   .land .container .content .booking-box .booking-control .booking-info .trip-control .searchButton {
@@ -4578,14 +4640,15 @@ footer .copyright-section p:nth-child(2) {
   .experience-section .container .content .experience-grid .experience-box {
     width: 160px;
     height: 140px;
-    padding: 15px 5px;
+    padding: 15px 10px;
   }
   .experience-section .container .content .experience-grid .experience-box h4 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 30px;
   }
   .experience-section .container .content .experience-grid .experience-box h5 {
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 7px;
   }
   .experience-section .container .content .experience-grid .experience-box p {
     font-size: 12px;
@@ -4686,8 +4749,15 @@ footer .copyright-section p:nth-child(2) {
   .activity {
     width: 250px;
   }
+  .activity.large .trip-image {
+    height: 250px !important;
+    flex: auto;
+  }
   #posts .container {
     padding: 0 1em;
+  }
+  #posts .container .slider {
+    padding: 2em 5%;
   }
   #posts .container .carousel .activity {
     width: 100%;
@@ -4752,12 +4822,24 @@ footer .copyright-section p:nth-child(2) {
     margin: 0 auto;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 355px) {
   .my-login-page .card.fat {
     padding: 0;
   }
   .my-login-page .card.fat .card-body {
     padding: 15px;
+  }
+  .newsletter-section .container .content .newsletter-form .input-group .input {
+    width: 50%;
+  }
+  .newsletter-section .container .content .newsletter-form .button--submit {
+    padding: 0.5em 0.5em;
+    font-size: 13px;
+  }
+  .newsletter-section .container .content .newsletter-form .input:focus,
+  .newsletter-section .container .content .newsletter-form .input:focus-visible {
+    border-color: #357398;
+    outline: none;
   }
 }
 @media (max-width: 1199px) {

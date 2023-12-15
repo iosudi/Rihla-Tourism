@@ -4737,6 +4737,9 @@ footer .copyright-section p:nth-child(2) {
     width: 7em;
     height: 5em;
   }
+  .blog-main {
+    background-attachment: unset;
+  }
   .main .heading h2 {
     font-size: 25px;
   }

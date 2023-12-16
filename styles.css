@@ -1185,6 +1185,7 @@ header.header-bg .logo img {
   overflow: hidden;
   background-position: center;
   background-size: cover;
+  cursor: pointer;
   box-shadow: 0 0 3px 0px rgb(206, 206, 206);
   transition: 0.5s;
 }
@@ -2491,6 +2492,204 @@ header.header-bg .logo img {
 }
 
 /* ^ -------- End Services --------- */
+.contact .content .contact-form {
+  width: 70%;
+}
+.contact .content .heading {
+  border-radius: 15px 0 15px 0;
+  background: #0b3e91;
+  width: calc(50% - 15px);
+}
+.contact .content .heading h3 {
+  width: 80%;
+  color: #fff;
+}
+.contact .content .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  width: calc(50% - 15px);
+}
+.contact .content .message {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+.contact .content .flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+.contact .content .form label {
+  position: relative;
+}
+.contact .content .form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+}
+.contact .content .form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+.contact .content .form label .input:-moz-placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+.contact .content .form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+.contact .content .form label .input:focus + span,
+.contact .content .form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.contact .content .form label .input:valid + span {
+  color: green;
+}
+.contact .content .input01 {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+}
+.contact .content .form label .input01 + span {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+.contact .content .form label .input01:-moz-placeholder-shown + span {
+  top: 40px;
+  font-size: 0.9em;
+}
+.contact .content .form label .input01:placeholder-shown + span {
+  top: 40px;
+  font-size: 0.9em;
+}
+.contact .content .form label .input01:focus + span,
+.contact .content .form label .input01:valid + span {
+  top: 50px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.contact .content .form label .input01:valid + span {
+  color: green;
+}
+.contact .content .fancy {
+  background-color: transparent;
+  border: 2px solid #cacaca;
+  border-radius: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 390;
+  letter-spacing: 2px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 8px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 13px;
+}
+.contact .content .fancy::before {
+  content: " ";
+  width: 1.7rem;
+  height: 2px;
+  background: #cacaca;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(230%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+.contact .content .fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #818181;
+  transform: translateX(30%);
+}
+.contact .content .fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+.contact .content .fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+.contact .content .fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+.contact .content .fancy:hover {
+  color: white;
+  background: #cacaca;
+}
+.contact .content .fancy:hover::before {
+  width: 1.5rem;
+  background: white;
+}
+.contact .content .fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}
+.contact .content .fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+.contact .content .fancy:hover .bottom-key-1,
+.contact .content .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+
 footer {
   padding: 4em 4em 1em;
   background: #05203c;
@@ -2750,6 +2949,363 @@ footer .copyright-section p:nth-child(2) {
 .phone-nav.show-nav {
   opacity: 1;
   pointer-events: all;
+}
+
+.payment-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  gap: 50px;
+}
+.payment-page .arrow {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+.payment-page .arrow ion-icon {
+  font-size: 2em;
+  color: #002fa4;
+  transition: all 0.5s;
+}
+.payment-page .arrow a {
+  display: flex;
+}
+.payment-page .arrow:hover ion-icon {
+  transform: rotateZ(360deg);
+}
+.payment-page .container {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 30px 10px 10px 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.127);
+}
+.payment-page .main-content {
+  display: flex;
+  border-radius: 30px 10px 10px 30px;
+}
+.payment-page .visa-card {
+  background-color: #f8f8f8;
+  padding: 20px;
+  display: flex;
+  width: 450px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+}
+.payment-page .visa-card hr {
+  margin: 10px auto;
+  width: 100%;
+  border: 1px solid rgb(206, 206, 206);
+}
+.payment-page .p {
+  width: 100%;
+}
+.payment-page .p p {
+  text-align: right;
+  color: #4d4d4d;
+  font-size: 1em;
+  font-weight: 600;
+}
+.payment-page .title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.payment-page .title h3 {
+  color: #081d4e;
+  font-size: 1.3em;
+  height: 100%;
+}
+.payment-page .title .icon {
+  color: #fd8f1c;
+  filter: drop-shadow(rgba(0, 0, 0, 0.05));
+  font-size: 1.5em;
+}
+.payment-page .card-types {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.payment-page .type {
+  display: flex;
+  width: 90px;
+  height: 70px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.payment-page .type:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  background-color: rgb(216, 216, 216);
+}
+.payment-page .type img {
+  width: 80px;
+}
+.payment-page .type p {
+  font-size: 1em;
+  font-weight: 500;
+  color: #474747;
+}
+.payment-page .details-input {
+  width: 100%;
+}
+.payment-page .inputbox {
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 40px;
+  background-color: #ececec;
+  align-items: center;
+  border-radius: 6px;
+}
+.payment-page .inputbox input[type=text] {
+  color: #51534e;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.payment-page .inputbox label {
+  position: absolute;
+  top: -28px;
+  right: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #081d4e;
+}
+.payment-page .inputbox input {
+  text-align: right;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 5px 0 5px;
+}
+.payment-page .name {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  width: 100%;
+}
+.payment-page .name .inputbox {
+  width: 100%;
+}
+.payment-page .dates {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+.payment-page .dates .inputbox {
+  width: 50%;
+}
+.payment-page .detail-p {
+  display: flex;
+  flex-direction: column;
+}
+.payment-page .det {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-page .det p {
+  color: #081d4e;
+  font-size: 1em;
+  font-weight: 600;
+}
+.payment-page button {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  margin-top: 15px;
+  background-color: #002fa4;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.payment-page button p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.payment-page button:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  background-color: #0b3e91;
+}
+.payment-page .left-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 650px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../imgs/back4.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 20px;
+}
+.payment-page .titles {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  text-align: right;
+}
+.payment-page .titles h3 {
+  color: #fff;
+  font-size: 2.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.payment-page .titles span {
+  color: #fd8f1c;
+  font-weight: 500;
+}
+.payment-page .titles .hr:first-child {
+  width: 20%;
+  height: 2px;
+  border: none;
+  background: linear-gradient(to right, transparent, #f8f8f8);
+  margin: 10px 0;
+}
+.payment-page .titles .hr:last-child {
+  width: 20%;
+  height: 2px;
+  border: none;
+  background: linear-gradient(to left, transparent, #f8f8f8);
+  margin: 10px 0;
+}
+.payment-page .cards {
+  display: flex;
+  gap: 30px;
+}
+.payment-page .cards .card {
+  background-color: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.payment-page .cards .card .imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+.payment-page .cards .card .imgs .img {
+  width: 120px;
+  height: 40%;
+  background: url("../imgs/ema.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.payment-page .cards .card .imgs .img:last-child {
+  background: url("../imgs/ema2.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.payment-page .cards .card:last-child .imgs .img {
+  background: url("../imgs/moroco.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.payment-page .cards .card:last-child .imgs .img:last-child {
+  background: url("../imgs/moroco2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.payment-page .cards .card .detailss {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.payment-page .cards .card .detailss h3 {
+  color: #fd8f1c;
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-size: 1.3em;
+}
+.payment-page .cards .card .detailss p {
+  color: #9fa2a0;
+  font-size: 1em;
+  line-height: 20px;
+}
+.payment-page .cards .card .detailss p span {
+  color: #002fa4;
+}
+.payment-page .cards .card .detailss h2 {
+  font-size: 1.5em;
+  color: #fd8f1c;
+}
+.payment-page .cards .card .detailss button {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.payment-page .cost {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 5px 0;
+  gap: 5px;
+}
+.payment-page .cost span {
+  color: #9fa2a0;
+  text-decoration: line-through;
+  font-size: 1em;
+  line-height: 8px;
+}
+.payment-page .secure {
+  line-height: 40px;
+}
+.payment-page .secure h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+}
+.payment-page .secure h2 {
+  color: #fff;
+}
+.payment-page .secure h2 span {
+  font-family: "Noto Nastaliq Urdu", serif;
+  color: #fd8f1c;
+  font-size: 1.3em;
+}
+.payment-page h2 {
+  color: #4d4d4d;
+  text-align: center;
 }
 
 .animate {

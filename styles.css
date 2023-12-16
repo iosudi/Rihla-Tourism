@@ -2492,202 +2492,55 @@ header.header-bg .logo img {
 }
 
 /* ^ -------- End Services --------- */
-.contact .content .contact-form {
+.contact .container .contact-form {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 15px 0px 15px 0px;
+  background-color: #fff;
   width: 70%;
 }
-.contact .content .heading {
-  border-radius: 15px 0 15px 0;
+.contact .container .heading {
+  border-radius: 15px 0px 15px 0px;
   background: #0b3e91;
-  width: calc(50% - 15px);
 }
-.contact .content .heading h3 {
-  width: 80%;
+.contact .container .heading h3 {
   color: #fff;
 }
-.contact .content .form {
+.contact .container .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 350px;
-  background-color: #fff;
   padding: 20px;
   position: relative;
-  width: calc(50% - 15px);
 }
-.contact .content .message {
+.contact .container .message {
   color: rgba(88, 87, 87, 0.822);
   font-size: 14px;
 }
-.contact .content .flex {
-  display: flex;
-  width: 100%;
-  gap: 6px;
+.contact .container input,
+.contact .container textarea {
+  text-align: right;
 }
-.contact .content .form label {
-  position: relative;
+.contact .container ::-moz-placeholder {
+  opacity: 0.7;
 }
-.contact .content .form label .input {
-  width: 100%;
-  padding: 10px 10px 20px 10px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 5px;
+.contact .container ::placeholder {
+  opacity: 0.7;
 }
-.contact .content .form label .input + span {
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  color: grey;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-.contact .content .form label .input:-moz-placeholder-shown + span {
-  top: 15px;
-  font-size: 0.9em;
-}
-.contact .content .form label .input:placeholder-shown + span {
-  top: 15px;
-  font-size: 0.9em;
-}
-.contact .content .form label .input:focus + span,
-.contact .content .form label .input:valid + span {
-  top: 30px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-.contact .content .form label .input:valid + span {
-  color: green;
-}
-.contact .content .input01 {
-  width: 100%;
-  padding: 10px 10px 20px 10px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 5px;
-}
-.contact .content .form label .input01 + span {
-  position: absolute;
-  left: 10px;
-  top: 50px;
-  color: grey;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-.contact .content .form label .input01:-moz-placeholder-shown + span {
-  top: 40px;
-  font-size: 0.9em;
-}
-.contact .content .form label .input01:placeholder-shown + span {
-  top: 40px;
-  font-size: 0.9em;
-}
-.contact .content .form label .input01:focus + span,
-.contact .content .form label .input01:valid + span {
-  top: 50px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-.contact .content .form label .input01:valid + span {
-  color: green;
-}
-.contact .content .fancy {
-  background-color: transparent;
-  border: 2px solid #cacaca;
-  border-radius: 0px;
-  box-sizing: border-box;
+.contact .container .btn {
+  border-radius: 0px 15px 0px 15px;
+  background-color: #fd8f1c;
   color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 390;
-  letter-spacing: 2px;
-  margin: 0;
+  letter-spacing: 0px;
+  font-weight: 500;
+  border: 0;
+  font-size: 18px;
   outline: none;
-  overflow: visible;
-  padding: 8px 30px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  transition: all 0.3s ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  font-size: 13px;
 }
-.contact .content .fancy::before {
-  content: " ";
-  width: 1.7rem;
-  height: 2px;
-  background: #cacaca;
-  top: 50%;
-  left: 1.5em;
-  position: absolute;
-  transform: translateY(-50%);
-  transform: translateX(230%);
-  transform-origin: center;
-  transition: background 0.3s linear, width 0.3s linear;
+.contact .container .btn:hover {
+  background-color: #ff9f39;
 }
-.contact .content .fancy .text {
-  font-size: 1.125em;
-  line-height: 1.33333em;
-  padding-left: 2em;
-  display: block;
-  text-align: left;
-  transition: all 0.3s ease-in-out;
-  text-transform: lowercase;
-  text-decoration: none;
-  color: #818181;
-  transform: translateX(30%);
-}
-.contact .content .fancy .top-key {
-  height: 2px;
-  width: 1.5625rem;
-  top: -2px;
-  left: 0.625rem;
-  position: absolute;
-  background: white;
-  transition: width 0.5s ease-out, left 0.3s ease-out;
-}
-.contact .content .fancy .bottom-key-1 {
-  height: 2px;
-  width: 1.5625rem;
-  right: 1.875rem;
-  bottom: -2px;
-  position: absolute;
-  background: white;
-  transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-.contact .content .fancy .bottom-key-2 {
-  height: 2px;
-  width: 0.625rem;
-  right: 0.625rem;
-  bottom: -2px;
-  position: absolute;
-  background: white;
-  transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-.contact .content .fancy:hover {
-  color: white;
-  background: #cacaca;
-}
-.contact .content .fancy:hover::before {
-  width: 1.5rem;
-  background: white;
-}
-.contact .content .fancy:hover .text {
-  color: white;
-  padding-left: 1.5em;
-}
-.contact .content .fancy:hover .top-key {
-  left: -2px;
-  width: 0px;
-}
-.contact .content .fancy:hover .bottom-key-1,
-.contact .content .fancy:hover .bottom-key-2 {
-  right: 0;
-  width: 0;
+.contact textarea {
+  resize: none;
 }
 
 footer {
@@ -4234,6 +4087,9 @@ footer .copyright-section p:nth-child(2) {
   #posts .container .carousel {
     grid-auto-columns: calc(50% - 13px);
   }
+  .contact .container .contact-form {
+    width: 90%;
+  }
   .footer-section .links-section {
     flex-direction: column;
     margin-right: 20px;
@@ -5285,6 +5141,9 @@ footer .copyright-section p:nth-child(2) {
   }
   .popular-destinations .container .content .destinations .row.second .destination .title h4 {
     font-size: 20px;
+  }
+  .contact .container .contact-form {
+    width: 80%;
   }
   .sponsors .container .content {
     flex-wrap: wrap;

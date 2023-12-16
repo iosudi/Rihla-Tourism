@@ -1027,6 +1027,14 @@
     }
   }
 
+  .contact {
+    .container {
+      .contact-form {
+        width: 90%;
+      }
+    }
+  }
+
   .footer-section {
     .links-section {
       flex-direction: column;
@@ -2427,6 +2435,14 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .contact {
+    .container {
+      .contact-form {
+        width: 80%;
       }
     }
   }
